@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dbe0c4d9_002D92f9_002D482a_002Dbc28_002D48bb75388f61/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LinearSearchTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.LinearSearchTest.LinearSearchTest1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.LinearSearchTest.LinearSearchTest2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.LinearSearchTest.LinearSearchTest3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.BinearSearchTest.BinearSearchTest1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.BinearSearchTest.BinearSearchTest2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.BinearSearchTest.BinearSearchTest3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.BinarySearchTest.MergeSortTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B4E78FB8-667C-4BB5-B3FB-A22928F12EC0::net8.0::TestMappevurdering1.BinarySearchTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

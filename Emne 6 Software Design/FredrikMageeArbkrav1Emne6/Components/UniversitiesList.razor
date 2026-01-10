@@ -1,0 +1,130 @@
+﻿@inject HttpClient HttpClient
+
+<section class="table-section">
+    <!-- Seksjonen med knapp for henting av universiteter, loading-, feil- og sukssess-melding -->
+    <section class="row universitet-header-section">
+        <div class="col-12 col-md-4">
+            <button type="button" class="btn button universitieslist-color"
+                    @onclick="GetUniversities"><i class="bi bi-download"></i> Hent universiteter i Norge</button>
+        </div>
+        <div class="col-12 col-md-4 d-flex">
+            @if (_isLoading)
+            {
+                <span class="alert alert-warning loading-message">Loading...</span>
+            }
+            else if (_message != null)
+            {
+                <span class="alert @MessageClassColor()">@_message</span>
+            }
+            else
+            {
+                <div class="m-auto">
+                    <h2>Universiteter i Norge</h2>
+                </div>
+            }
+        </div>
+        <div class="col-12 col-md-4"></div>
+    </section>
+
+    <!-- Tabellen med universiteter -->
+    @if (_universities.Count > 0)
+    {
+        <table class="table table-striped table-bordered">
+            <thead>
+            <th>Universitet navn:</th>
+            <th>Land:</th>
+            <th>Landkode:</th>
+            <th>Nettside:</th>
+            <th>Domene:</th>
+            </thead>
+            <tbody>
+            @foreach (var university in _universities)
+            {
+                <tr>
+                    <td>@university.Name</td>
+                    <td>@university.Country</td>
+                    <td>@university.CountryCode</td>
+                    <td>@(university.WebPages.Count > 0 ? university.WebPages[0] : "Ingen nettside")</td>
+                    <td>@(university.Domains.Count > 0 ? university.Domains[0] : "Ingen domene")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+</section>
+
+@code {
+    
+    // ======================================== Felt/Egenskaper ========================================
+    private List<University> _universities = [];
+
+    // Meldingen som vises, enten feilmelding eller suksessmelding bestemt av isError-boolean
+    private string? _message;
+    private bool _isError;
+    
+    // Viser melding ved loading
+    private bool _isLoading;
+    
+    // ======================================== API-kall ========================================
+    
+    // API-kall for å hente universitetene
+    private async Task GetUniversities()
+    {
+        try
+        {   
+            // Viser først en loading-melding
+            _isLoading = true;
+            // Henter universitetene med en Http-forespørsel
+            _universities = await HttpClient.GetFromJsonAsync<List<University>>(
+                "http://universities.hipolabs.com/search?country=Norway") ?? [];
+            
+            // Hvis listen er tom har det skjedd noe galt, viser deretter en feilmelding eller en suksess-melding
+            if (_universities.Count == 0)
+                SetError("Noe gikk galt under innlastning av universiteter og listen er tom.");
+            else
+                _ = ShowSuccessMessage();
+        }
+        catch (HttpRequestException ex)
+        {
+            SetError($"HTTP requesten feilet ved innlastning av universiteter: {ex.Message}");
+
+        }
+        catch (Exception ex)
+        {
+            SetError($"En uforventet feil oppstod ved innlastning av universiteter: {ex.Message}");
+        }
+        finally
+        {
+            // Fjerner loading beskjeden til slutt
+            _isLoading = false;
+        }
+    }
+    
+    // ==================================== Feilmelding/Suksessmelding metoder ====================================
+    
+    // Metode for å endre om det er en feilmelding eller en suksessmelding som vises
+    private string MessageClassColor() => _isError switch
+    {
+        true => "alert-danger error-message",
+        _ => "alert-success success-message"
+    };
+    
+    // Felles metode som brukes når vi skal logge og vise en feilmelding
+    private void SetError(string errorMessage)
+    {
+        _isError = true;
+        Console.WriteLine(errorMessage);
+        _message = errorMessage;
+    }
+    
+    // Hvis API-kallet var en suksess så vises en suksess melding i 3 sekunder
+    private async Task ShowSuccessMessage()
+    {
+        _isError = false;
+        _message = "Universiteter hentet vellykket!";
+        await Task.Delay(3000);
+        _message = null;
+        StateHasChanged();
+    }
+
+}

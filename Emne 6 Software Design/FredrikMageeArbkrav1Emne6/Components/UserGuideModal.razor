@@ -1,0 +1,84 @@
+﻿<div class="modal fade" id="helpModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Guide til Handlelisteapplikasjonen</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Handlelisteapplikasjon er en modulær applikasjon med 3 komponenter: Handleliste, handlekurv 
+                    og oversikt. Handleliste-komponenten lar brukere legge til varer med navn, mengde, kategori og 
+                    estimert pris. Varene vises detaljert i en tabell i komponenten, og varene kan kjøpes eller slettes.
+                    Ved kjøp så flyttes de til vår andre komponent handlekurv. Her vises en detaljert oversikt over
+                    de kjøpte varene, og bruker har igjen valg om å flytte en vare tilbake til handlelisten eller
+                    slette den. Siste komponent oversikt viser bruker statistikk og detaljer av innholdet i begge 
+                    listene.</p>
+                <p>I menyen øverst på siden er det tre valg: Handleliste, handlekurv og oversikt.</p>
+                <hr/>
+                
+                <p><strong>Handleliste:</strong></p>
+                
+                <div class="btn button handleliste-color disable-hover" title="Opprett en ny vare">
+                    <i class="bi bi-plus-circle"></i> Legg til ny vare
+                </div>
+                <p> Her kan du legge til ny vare ved å trykke på den grønne knappen øverst til
+                    venstre. Da kommer det opp et skjema du kan fylle ut med varenavn, mengde, kategori og estimert 
+                    pris.</p>
+                
+                <div class="btn button handleliste-color disable-hover" title="Add category">
+                    <i class="bi bi-plus"></i>
+                </div>
+                <p>Du kan velge ut ifra allerede opprettete kategorier i nedtrekksmenyen
+                    eller opprette en ny kategori selv ved å trykke på den grønne plus-knappen.</p>
+                
+                
+                <div class="btn button handleliste-color disable-hover">Legg til</div>
+                <p>Legg til-knappen validerer at feltene har fått riktig verdi, og ved suksessful validering så blir
+                    det opprettet en ny vare i handlelisten.</p>
+                
+                
+                <div class="btn btn-secondary disable-hover">Reset</div>
+                <p>Reset-knappen sletter fjerner alt allerede lagt til i feltene</p>
+                <br/>
+                
+                <p> I venstre kolonne i tabellen er det to knapper: </p>
+                
+                <div class="btn handleliste-color button disable-hover" title="Legg tilbake i handleliste">
+                    <i class="bi bi-cart-check"></i>
+                </div>
+                <p>Den blå knappen til venstre setter en vare som kjøpt, og flytter den fra handlelisten
+                    til handlekurven.</p>
+                
+                <div class="btn item-deleted disable-hover" title="Legg tilbake i handleliste">
+                    <i class="bi bi-trash"></i>
+                </div>
+                <p>Den grå knappen til høyre sletter en vare fra handlelisten.</p>
+                <p>Du kan sortere etter kategori ved å trykke på nedtrekksmenyen hvor det står Kategori i 
+                    kolonneoverskriften.</p>
+                <hr/>
+                
+                <p><strong>Handlekurv:</strong></p>
+                <p>Her havner varene du har satt som kjøpt i handlelisten.</p>
+                <p> I venstre kolonne i tabellen er det to knapper: </p>
+                
+                <div class="btn handlekurv-color button disable-hover" title="Legg tilbake i handleliste">
+                    <i class="bi bi-cart-dash"></i>
+                </div>
+                <p>Den grønne knappen til venstre setter varen tilbake på handlelisten igjen.</p>
+                
+                <div class="btn item-deleted disable-hover" title="Slett">
+                    <i class="bi bi-trash"></i>
+                </div>
+                <p>Den grå knappen til høyre sletter en vare fra handlekurven.</p>
+                <hr/>
+                
+                <p><strong>Oversikt:</strong></p>
+                <p>Her kan du se detaljer og statistikk om varene du har i handlelisten og handlekurven.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Lukk</button>
+            </div>
+        </div>
+    </div>
+</div>

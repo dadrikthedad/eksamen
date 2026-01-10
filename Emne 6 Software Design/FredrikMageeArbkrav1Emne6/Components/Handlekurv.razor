@@ -1,0 +1,72 @@
+﻿<!-- Modaler og seksjonen med UserGuide-knapp -->
+<UserGuideSection ActiveComponent="handlekurv-color"/>
+
+<!-- Tabell-seksjonen -->
+<section class="table-section">
+    @if (CartList.Count == 0)
+    {
+        <section class="empty-list-message handlekurv-color">
+            <p>Handlekurven er tom.</p>
+            <p>Varer som er kjøpt ifra handlelisten havner her.</p>
+        </section>
+    }
+    else
+    {
+        <section class="custom-table">
+            <!-- Tabell header -->
+            <div class="table-header"></div>
+            <div class="table-header"><strong>Varenavn</strong></div>
+            <div class="table-header"><strong>Kategori</strong>
+            </div>
+            <div class="table-header align-right"><strong>Mengde</strong></div>
+            <div class="table-header align-right"><strong>Estimert pris</strong></div>
+
+            <!-- Tabell body med scroll -->
+            @foreach (var shoppingItem in CartList)
+            {
+                    <div class="table-body item-buttons">
+                        <button class="btn handlekurv-color button" title="Legg tilbake i handleliste"
+                                @onclick="() => OnItemRestored(shoppingItem)">
+                            <i class="bi bi-cart-dash"></i>
+                        </button>
+                        <button class="btn item-deleted" title="Slett" @onclick="() => OnItemDeleted(shoppingItem)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                    <div class="table-body">@shoppingItem.Name</div>
+                    <div class="table-body">@shoppingItem.Category</div>
+                    <div class="table-body align-right">@(shoppingItem.Amount ?? 0) stk</div>
+                    <div class="table-body align-right">@(shoppingItem.EstimatedPrice ?? 0) kr</div>
+            }
+        </section>
+        
+        <!-- Linja under tabellen -->
+        <section class="table-footer">
+            <div>
+                <span>Antall varer:</span>
+                <strong>@CartList.Sum(i => i.Amount) stk</strong>
+            </div>
+            <div>
+                <span>Totalt estimert pris:</span>
+                <strong> @CartList.Sum(i => i.TotalPrice) kr</strong>
+            </div>
+        </section>
+    }
+</section>
+
+@code {
+
+    // ======================================== Parametere ========================================
+
+    [CascadingParameter(Name = "CartList")]
+    private IReadOnlyList<ShoppingItem> CartList { get; set; } = null!;
+
+    [Parameter] public EventCallback<ShoppingItem> ShoppingItemRestored { get; set; }
+
+    [Parameter] public EventCallback<ShoppingItem> ShoppingItemDeleted { get; set; }
+
+    // ======================================== EventHandlers ========================================
+    private async Task OnItemRestored(ShoppingItem shoppingItem) => await ShoppingItemRestored.InvokeAsync(shoppingItem);
+
+    private async Task OnItemDeleted(ShoppingItem shoppingItem) => await ShoppingItemDeleted.InvokeAsync(shoppingItem);
+}

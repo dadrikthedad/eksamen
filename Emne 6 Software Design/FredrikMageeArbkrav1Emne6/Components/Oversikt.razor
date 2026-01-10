@@ -1,0 +1,105 @@
+﻿<!-- Modaler og seksjonen med UserGuide-knapp -->
+<UserGuideSection ActiveComponent="oversikt-color"/>
+
+<!-- Tabell-seksjonen -->
+<section class="table-section">
+    @if (ShoppingList.Count == 0 && CartList.Count == 0 )
+    {
+        <section class="empty-list-message oversikt-color">
+            <p>Oversikten er tom.</p>
+            <p>Se statistikk fra handlelisten og handlekurven - så fremt det finnes
+                varer i hvertfall en av dem</p>
+        </section>
+    }
+    else
+    {   
+        <!-- Statistikk i kort -->
+        <section class="row">
+            <div class="col-12 col-md-6 col-lg-2 ">
+                    <OverviewCard
+                        TopText="Antall varer på handlelisten:"
+                        BottomText="@ShoppingList.Sum(i => i.Amount).ToString()"/>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <OverviewCard
+                    TopText="Antall varer i handlekurven:"
+                    BottomText="@CartList.Sum(i => i.Amount).ToString()"/>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <OverviewCard
+                    TopText="Totalt antall varer:"
+                    BottomText="@((CartList.Sum(i => i.Amount) +
+                                   ShoppingList.Sum(i => i.Amount)).ToString())"/>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <OverviewCard
+                    TopText="Estimert total pris på handlelisten:"
+                    BottomText="@ShoppingList.Sum(i => i.TotalPrice).ToString()"
+                    ShowCurrency/>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <OverviewCard
+                    TopText="Estimert total pris i handlekurven:"
+                    BottomText="@CartList.Sum(i => i.TotalPrice).ToString()"
+                    ShowCurrency/>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <OverviewCard
+                    TopText="Totalt estimert pris:"
+                    BottomText="@((ShoppingList.Sum(i => i.TotalPrice) +
+                                   CartList.Sum(i => i.TotalPrice)).ToString())"
+                    ShowCurrency/>
+            </div>
+        </section>
+        
+        
+        <!-- Pr kategori tabell -->
+        <table class="table table-striped table-bordered pr-category-table">
+            <!-- Tabell header -->
+            <thead>
+                <th>Kategori</th>
+                <th>Antall varelinjer</th>
+                <th>Totalt antall varer</th>
+                <th>Totalt estimert pris</th>
+                <th>Gj.snitt pris pr vare</th>
+            </thead>
+            <!-- Tabell body-->
+            <tbody>
+                @foreach (var category in MergedList
+                              .GroupBy(i => i.Category)
+                              .OrderByDescending(g => g
+                                  .Sum(i => i.TotalPrice)))
+                {
+                    <tr>
+                        <td>@category.Key</td>
+                        <td>@category.Count()</td>
+                        <td>@category.Sum(i => i.Amount)</td>
+                        <td>@($"{category.Sum(i => i.TotalPrice):F2} kr")</td>
+                        <td>@($"{(category.Average(i => i.EstimatedPrice) ?? 0):F2} kr")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</section>
+
+
+@code {
+    // ======================================== Parametere ========================================
+    [CascadingParameter(Name = "ShoppingList")]
+    private IReadOnlyList<ShoppingItem> ShoppingList { get; set; } = null!;
+    
+    [CascadingParameter(Name = "CartList")]
+    private IReadOnlyList<ShoppingItem> CartList { get; set; } = null!;
+    
+    // ======================================== Felt/Egenskaper ========================================
+    private List<ShoppingItem> MergedList { get; set; } = [];
+    
+    // ======================================== Livsyklus ========================================
+    protected override void OnInitialized() =>
+        MergeLists();
+    
+    // ======================================== Metoder ========================================
+    private void MergeLists() =>
+        MergedList = ShoppingList.Concat(CartList).ToList();
+}

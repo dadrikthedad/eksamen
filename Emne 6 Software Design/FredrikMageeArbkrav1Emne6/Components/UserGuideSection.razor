@@ -1,0 +1,26 @@
+﻿<UserGuideModal/>
+
+<section class="user-guide-section">
+    @if (ShowAddNewItemButton)
+    {
+        <button class="btn button handleliste-color" data-bs-toggle="modal" data-bs-target="#newItemModal"
+                title="Opprett en ny vare">
+            <i class="bi bi-plus-circle"></i> Legg til ny vare
+        </button>
+    }
+    else
+    {
+        <div></div>
+    }
+    <button class="btn button @ActiveComponent" data-bs-toggle="modal" data-bs-target="#helpModal" title="Les manualen">
+        <i class="bi bi-question-circle"></i>
+    </button>
+</section>
+
+@code {
+    [Parameter]
+    public bool ShowAddNewItemButton { get; set; }
+    
+    [Parameter]
+    public string ActiveComponent { get; set; } = "handleliste-color";
+}

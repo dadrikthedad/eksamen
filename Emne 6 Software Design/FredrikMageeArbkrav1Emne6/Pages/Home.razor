@@ -1,0 +1,157 @@
+﻿@inject ShoppingItemService ShoppingItemService
+@implements IDisposable
+
+@page "/"
+
+<!-- Header med navigasjonsknapper -->
+<header class="header @HeaderClass()">
+        <div class="header-center">
+            <img class="logo" src="/images/handlelistelogo.png" width="120px" alt="Handleliste logo"/>
+            <div>
+                <PageTitle>Handlelisteapplikasjon</PageTitle>
+                <h1>Handlelisteapplikasjon</h1>
+
+                <section class="navigation-section">
+                    <button class="btn navigation-btn @NavigationButtonColor()
+                            @(ActiveComponent == ActiveComponentType.Handleliste ? "active-button" : "")"
+                            @onclick="ToHandleliste">
+                        <i class="bi bi-list-check"></i> Handleliste
+                    </button>
+                    <button class="btn navigation-btn @NavigationButtonColor()
+                            @(ActiveComponent == ActiveComponentType.Handlekurv ? "active-button" : "")"
+                            @onclick="ToHandlekurv">
+                        <i class="bi bi-cart"></i> Handlekurv
+                    </button>
+                    <button class="btn navigation-btn @NavigationButtonColor() 
+                            @(ActiveComponent == ActiveComponentType.Oversikt ? "active-button" : "")"
+                            @onclick="ToOversikt">
+                        <i class="bi bi-bar-chart-fill"></i> Oversikt
+                    </button>
+                    <button class="btn navigation-btn @NavigationButtonColor() 
+                            @(ActiveComponent == ActiveComponentType.University ? "active-button" : "")"
+                            @onclick="ToUniversities">
+                        <i class="bi bi-book"></i> Universiteter
+                    </button>
+                </section>
+            </div>
+        </div>
+</header>
+
+<!-- Hvis en feil oppstår -->
+@if (ShoppingItemService.ErrorMessage != null)
+{
+    <span class="alert alert-danger error-message" >@ShoppingItemService.ErrorMessage</span>
+}
+
+<!-- Her vises den aktive komponenten, og vi sender inn ShoppingList og CartList med CascadingValues til alle barna -->
+<CascadingValue Name="ShoppingList" Value="ShoppingItemService.ShoppingList">
+    <CascadingValue Name="CartList" Value="ShoppingItemService.CartList">
+            <DynamicComponent Type="ComponentType" Parameters="_currentDictionary"></DynamicComponent>
+    </CascadingValue>
+</CascadingValue>
+
+@code {
+    // ======================================== Felt/Egenskaper ========================================
+    // Typen som brukes i DynamicComponent. Default på Handleliste, og kan endre seg til de andre komponentenes type
+    private Type ComponentType { get; set; } = typeof(Handleliste);
+
+    // Ordboken som styrer hvilket parameter vi sender inn til den aktive komponenten
+    private Dictionary<string, object> _currentDictionary = new();
+    
+    // For å vise hvilken komponent som er valgt i navgiasjonsmenyen. Default er Handleliste
+    private ActiveComponentType ActiveComponent { get; set; } = ActiveComponentType.Handleliste;
+    
+    // ======================================== Livssykluser ========================================
+    
+    // Setter handleliste som default komponent og lytter til servicen sin event
+    protected override void OnInitialized()
+    {
+        // Starter med hovedkomponenten 
+        ShoppingItemService.StateChange += StateHasChanged;
+        ToHandleliste();
+    } 
+    
+    // ======================================== Navigasjon ========================================
+    
+    // Metoder for å navigere. Vi setter ComponentType til den aktive komponenten, og vi sender inn parameterne og
+    // event callbacks som vi lytter til som en Dictionary til hver komponent. Factory generer et EventFallback<T>
+    // korrekt for oss
+    private void ToHandleliste()
+    {
+        ComponentType = typeof(Handleliste);
+        ActiveComponent = ActiveComponentType.Handleliste;
+        _currentDictionary = new Dictionary<string, object>
+        {
+            {
+                nameof(Handleliste.ShoppingItemAdded),
+                EventCallback.Factory.Create<ShoppingItem>(this, ShoppingItemService.AddShoppingListItem)
+            },
+            {
+                nameof(Handleliste.ShoppingItemPurchased),
+                EventCallback.Factory.Create<ShoppingItem>(this, ShoppingItemService.PurchaseShoppingListItem)
+            },
+            {
+                nameof(Handleliste.ShoppingItemDeleted),
+                EventCallback.Factory.Create<ShoppingItem>(this, ShoppingItemService.DeleteShoppingListItem)
+            },
+            {
+                nameof(Handleliste.CategoryList),
+                ShoppingItemService.CategoryList
+            }
+        };
+    }
+    private void ToHandlekurv()
+    {
+        ComponentType = typeof(Handlekurv);
+        ActiveComponent = ActiveComponentType.Handlekurv;
+        _currentDictionary = new Dictionary<string, object>
+        {
+            {
+                nameof(Handlekurv.ShoppingItemRestored),
+                EventCallback.Factory.Create<ShoppingItem>(this, ShoppingItemService.RestoreShoppingListItem)
+            },
+            {
+                nameof(Handlekurv.ShoppingItemDeleted),
+                EventCallback.Factory.Create<ShoppingItem>(this, ShoppingItemService.DeleteCartItem)
+            }
+        };
+    }
+    
+    private void ToOversikt()
+    {
+        ActiveComponent = ActiveComponentType.Oversikt;
+        ComponentType = typeof(Oversikt);
+        _currentDictionary = new Dictionary<string, object>();
+    }
+    
+    private void ToUniversities()
+    {
+        ActiveComponent = ActiveComponentType.University;
+        ComponentType = typeof(UniversitiesList);
+        _currentDictionary = new Dictionary<string, object>();
+    }
+    
+    // ======================================== Metoder ========================================
+    // Endrer header farge utifra hvilken komponent vi er for å lett kunne skille mellom komponentene
+    private string HeaderClass() => ActiveComponent switch
+        {
+            ActiveComponentType.Handleliste => "handleliste-color",
+            ActiveComponentType.Handlekurv => "handlekurv-color",
+            ActiveComponentType.Oversikt => "oversikt-color",
+            ActiveComponentType.University => "universitieslist-color", 
+            _ => throw new ArgumentOutOfRangeException()
+        };
+    
+    // Endrer fargene til knappene til en komponent
+    private string NavigationButtonColor() => ActiveComponent switch
+    {
+        ActiveComponentType.Handleliste => "handleliste-text-color",
+        ActiveComponentType.Handlekurv => "handlekurv-text-color",
+        ActiveComponentType.Oversikt => "oversikt-text-color",
+        ActiveComponentType.University => "universitieslist-text-color", 
+        _ => throw new ArgumentOutOfRangeException()
+    };
+    
+    // Fjerner lytting av eventet når komponenten ikke brukes lenger
+    public void Dispose() => ShoppingItemService.StateChange -= StateHasChanged;
+}

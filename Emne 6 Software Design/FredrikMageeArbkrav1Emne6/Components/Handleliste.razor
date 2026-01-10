@@ -1,0 +1,163 @@
+﻿<!-- Modaler og seksjonen med legg til-knapp og UserGuide-knapp -->
+<NewItemModal ItemAdded="OnAddItem" CategoryList="CategoryList"/>
+<UserGuideSection ShowAddNewItemButton/>
+
+<!-- Tabell-seksjonen -->
+<section class="table-section">
+    @if (ShoppingList.Count == 0)
+    {
+        <section class="empty-list-message handleliste-color">
+            <p>Handlelisten er tom. </p>
+            <p>Legg til nye varer i handlelisten med knappen øverst til venstre</p>
+        </section>
+    }
+    else
+    {
+        <section class="custom-table">
+            <!-- Tabell header -->
+            <div class="table-header"></div>
+            <div class="table-header"><strong>Varenavn</strong></div>
+            <div class="table-header">
+                <select class="form-select form-select-sm" @onchange="OnFilterChanged">
+                    <option value="" disabled selected>Kategori</option>
+                    <option value="ShowAll">Vis alle</option>
+                    @foreach (var category in CategoryList)
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+            </div>
+            <div class="table-header align-right"><strong>Mengde</strong></div>
+            <div class="table-header align-right"><strong>Estimert pris</strong></div>
+
+            <!-- Tabell body med scroll -->
+            @foreach (var shoppingItem in CurrentShoppingList)
+            {
+                <div class="table-body item-buttons">
+                    <button class="btn button handleliste-color" title="Kjøp varen og flytt til handlekurv"
+                            @onclick="() => OnItemPurchased(shoppingItem)">
+                        <i class="bi bi-cart-check"></i>
+                    </button>
+                    <button class="btn item-deleted" title="Slett"
+                            @onclick="() => OnItemDeleted(shoppingItem)">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+                <div class="table-body">@shoppingItem.Name</div>
+                <div class="table-body">@shoppingItem.Category</div>
+                <div class="table-body align-right">@(shoppingItem.Amount ?? 0) stk</div>
+                <div class="table-body align-right">@(shoppingItem.EstimatedPrice ?? 0) kr</div>
+            }
+        </section>
+        
+        <!-- Linja under tabellen -->
+        <section class="table-footer">
+            <div>
+                <span>Antall varer:</span>
+                <strong>@CurrentShoppingList.Sum(i => i.Amount) stk</strong>
+            </div>
+            <div>
+                @if (SuccessMessage != null)
+                {
+                    <span class="success-message alert alert-success">@SuccessMessage</span>
+                }
+            </div>
+            <div>
+                <span>Totalt estimert pris:</span>
+                <strong>@CurrentShoppingList.Sum(si => si.TotalPrice) kr</strong>
+            </div>
+        </section>
+    }
+</section>
+
+
+@code {
+
+    // ======================================== Parametere ========================================
+    // ShoppingList som vi henter fra foreldre-komponenten
+    [CascadingParameter(Name = "ShoppingList")]
+    private IReadOnlyList<ShoppingItem> ShoppingList { get; set; } = null!;
+
+    // Listen med kategorier som vi henter fra foreldre-komponenten
+    [Parameter]
+    public IReadOnlyList<string> CategoryList { get; set; } = null!;
+
+    // CallbackEvents
+    [Parameter] public EventCallback<ShoppingItem> ShoppingItemAdded { get; set; }
+
+    [Parameter] public EventCallback<ShoppingItem> ShoppingItemPurchased { get; set; }
+
+    [Parameter] public EventCallback<ShoppingItem> ShoppingItemDeleted { get; set; }
+
+    // ======================================== Felt/Egenskaper ========================================
+
+    // Listen som vises i UI-en
+    private List<ShoppingItem> CurrentShoppingList { get; set; } = null!;
+
+    // Den valgte kategorien for filtrering. Null hvis ingenting er valgt
+    private string? _selectedCategory;
+
+    private string? SuccessMessage { get; set; }
+
+    // ======================================== Livsykluser ========================================
+
+    // Bruker FilterShoppingList til å sette CurrentShoppingList ved innlastning av komponenten, samt at endringer
+    // som skjer med ShoppingList og CategoryList endrer UI-en i denne komponenten samtidig
+    protected override void OnParametersSet() => FilterShoppingList();
+
+    // ======================================== EventHandlers ========================================
+
+    // Registerer når Select-feltet i kategory endrerer seg og vi henter ut verdien fra dette feltet og setter
+    // _selectedCategory til denne nye verdien
+    private void OnFilterChanged(ChangeEventArgs e)
+    {
+        _selectedCategory = e.Value?.ToString();
+        FilterShoppingList();
+    }
+
+    // Metode for å opprette nytt objekt i EditForm - Sender objektet til parent-komponetene hvis det blir validert 
+    // suksess og resetter feltene i FormEdit, samt fjerner ny kategori-feltet hvis det er åpent.
+    private async Task OnAddItem(ShoppingItem newShoppingItem)
+    {
+        await ShoppingItemAdded.InvokeAsync(newShoppingItem);
+        // Ved å bruke _ her så kjører vi ShowSuccessMessage-metoden uten at de andre metodene
+        // trenger å vente på den. Uten å bruke den så vil vi se at varen vi akkurat opprettet er fortsatt
+        // i skjemaet helt til ShowSuccessMessage er ferdig med å kjøre
+        _ = ShowSuccessMessage($"Vare {newShoppingItem.Name} er lagt til i handlelisten.");
+    }
+
+    // Metoden ved trykk på Kjøp-knappen - Sender varen til parent-komponent og flytter den fra handleliste til 
+    // kjøpt liste
+    private async Task OnItemPurchased(ShoppingItem shoppingItem) =>
+        await ShoppingItemPurchased.InvokeAsync(shoppingItem);
+
+
+    // Metode ved trykk på Slett-knappen - Sender varen til parent–komponent slik at den ved hvem som skal slettes
+    private async Task OnItemDeleted(ShoppingItem shoppingItem) =>
+        await ShoppingItemDeleted.InvokeAsync(shoppingItem);
+
+
+    // ======================================== Metoder ========================================
+
+    // Denne metoden setter ShoppingList som den listen som skal vises, så fremt brukeren ikke har valgt filtrering
+    // og _selectedCategory har en verdi
+    private void FilterShoppingList()
+    {
+        if (string.IsNullOrEmpty(_selectedCategory) || _selectedCategory == "ShowAll")
+            CurrentShoppingList = ShoppingList.ToList();
+
+        else
+            CurrentShoppingList = ShoppingList.Where(i => i.Category == _selectedCategory).ToList();
+    }
+
+    // Metode som viser en suksessmelding når brukeren legger inn en ny vare. Vises i 5 sekunder, så forsvinner den
+    private async Task ShowSuccessMessage(string message)
+    {
+        SuccessMessage = message;
+        await Task.Delay(5000);
+        SuccessMessage = null;
+        // Informere UI-en at SuccessMessage har blitt null igjen
+        StateHasChanged();
+    }
+
+}

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappevurdering1", "Mappevurdering1\Mappevurdering1.csproj", "{BDDA55FF-F9BB-4750-8BE4-F3CA978E90F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMappevurdering1", "TestMappevurdering1\TestMappevurdering1.csproj", "{B4E78FB8-667C-4BB5-B3FB-A22928F12EC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDDA55FF-F9BB-4750-8BE4-F3CA978E90F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDA55FF-F9BB-4750-8BE4-F3CA978E90F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDA55FF-F9BB-4750-8BE4-F3CA978E90F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDA55FF-F9BB-4750-8BE4-F3CA978E90F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E78FB8-667C-4BB5-B3FB-A22928F12EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E78FB8-667C-4BB5-B3FB-A22928F12EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E78FB8-667C-4BB5-B3FB-A22928F12EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E78FB8-667C-4BB5-B3FB-A22928F12EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

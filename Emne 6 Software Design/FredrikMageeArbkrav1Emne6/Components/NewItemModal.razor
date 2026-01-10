@@ -1,0 +1,134 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="newItemModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal header -->
+            <div class="modal-header">
+                <h5 class="modal-title">Legg til ny vare</h5>
+                <button class="btn-close" data-bs-dismiss="modal" @onclick=ResetForm></button>
+            </div>
+            <div class="modal-body">
+                <!-- Skjema for nytt item -->
+                <EditForm Model="NewShoppingItem" OnValidSubmit="OnAddItem">
+                    <DataAnnotationsValidator/>
+
+                    <!-- Varenavn -->
+                    <div class="mb-3">
+                        <label for="varenavn" class="form-label">Varenavn:</label>
+                        <div>
+                            <InputText id="varenavn" placeholder="Navn på varen..." class="form-control"
+                                       @bind-Value="NewShoppingItem.Name"></InputText>
+                            <ValidationMessage For="@(() => NewShoppingItem.Name)"/>
+                        </div>
+                    </div>
+
+                    <!-- Mengde -->
+                    <div class="mb-3">
+                        <label for="mengde" class="form-label">Mengde (stk):</label>
+                        <div>
+                            <InputNumber id="mengde" class="form-control"
+                                         @bind-Value="NewShoppingItem.Amount"></InputNumber>
+                            <ValidationMessage For="@(() => NewShoppingItem.Amount)"/>
+                        </div>
+                    </div>
+
+                    <!-- Kategori -->
+                    <div class="mb-3">
+                        <label for="kategori-select" class="form-label">Kategori:</label>
+                        <div>
+                            <div class="category-form">
+                                <!-- Nedtrekksmeny for å velge kategori -->
+                                <InputSelect id="kategori-select" class="form-control"
+                                             @bind-Value="NewShoppingItem.Category">
+                                    <option value="" disabled>
+                                        Velg en eksisterende eller opprett en ny...
+                                    </option>
+                                    @foreach (var category in CategoryList)
+                                    {
+                                        <option>@category</option>
+                                    }
+                                </InputSelect>
+                                <!-- Knapp for å legge til ny kategori -->
+                                <button type="button" class="btn button handleliste-color"
+                                        @onclick="ToggleNewCategoryField"
+                                        title="Add category">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+
+                            @if (IsAdding)
+                            {   
+                                <!-- Input-felt for å legge til ny kategori -->
+                                <div>
+                                    <InputText id="kategori-input" placeholder="Opprett ny kategori..."
+                                               class="form-control" @bind-Value="NewShoppingItem.Category"></InputText>
+                                    <ValidationMessage For="@(() => NewShoppingItem.Category)"/>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Estimert pris -->
+                    <div class="mb-3">
+                        <label class="label-form" for="estimertPris">Estimert Pris (kr): </label>
+                        <div>
+                            <span>
+                                <InputNumber id="estimertPris" class="form-control" placeholder="Valgfritt..."
+                                             @bind-Value="NewShoppingItem.EstimatedPrice"></InputNumber></span>
+                            <ValidationMessage For="@(() => NewShoppingItem.EstimatedPrice)"/>
+                        </div>
+                    </div>
+
+                    <!-- Submit og resett knapp -->
+                    <div class="align-center">
+                        <button type="submit" class="btn button handleliste-color">Legg til</button>
+                        <button class="btn btn-secondary" @onclick="ResetForm">Reset</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    // ======================================== Parametere ========================================
+    [Parameter]
+    public IReadOnlyList<string> CategoryList { get; set; } = null!;
+    
+    // Når vi trykker på Submit-knappen så invoker vi denne eventen vi har fått fra foreldre-komponenten
+    [Parameter]
+    public EventCallback<ShoppingItem> ItemAdded { get; set; }
+    
+    // ======================================== Felt/Egenskaper ========================================
+    // Objektet vi oppretter i Modalen som skal inn i Handlelisten
+    private ShoppingItem NewShoppingItem { get; set; } = new();
+    
+    // Bool som styrer om feltet for ny kategori er skjult eller ikke
+    private bool IsAdding { get; set; }
+    
+    // For å bruke JavaScript å lukke modalen ved trykk så må vi injecte den her
+    [Inject] 
+    private IJSRuntime Js { get; set; } = null!;
+    
+    // ======================================== Metoder ========================================
+    
+    // Åpner eller lukk ny kategori-feltet
+    private void ToggleNewCategoryField() => IsAdding = !IsAdding;
+    
+    // Etter trykk på submit-knappen i EditForm-en så lukker vi automatisk modalen, sender ShoppingItem-objektet til
+    // Handleliste-komponenten (foreldren) og resetter formen
+    private async Task OnAddItem()
+    {
+        await Js.InvokeVoidAsync("eval", 
+            "bootstrap.Modal.getInstance(document.getElementById('newItemModal')).hide()");
+        await ItemAdded.InvokeAsync(NewShoppingItem);
+        ResetForm();
+    }
+    
+    // Metode for å resette EditForm-en. Brukes ved trykk på Reset-knapp eller etter lagt til nytt objekt i handleliste
+    private void ResetForm()
+    {
+        NewShoppingItem = new ShoppingItem();
+        IsAdding = false;
+    }
+}

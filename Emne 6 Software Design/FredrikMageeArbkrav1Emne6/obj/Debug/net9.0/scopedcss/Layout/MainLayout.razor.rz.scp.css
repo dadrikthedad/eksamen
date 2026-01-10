@@ -1,0 +1,16 @@
+.page[b-4krbk5xptt] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-4krbk5xptt] {
+    flex: 1;
+}
+
+
+@media (min-width: 641px) {
+    .page[b-4krbk5xptt] {
+        flex-direction: row;
+    }
+}

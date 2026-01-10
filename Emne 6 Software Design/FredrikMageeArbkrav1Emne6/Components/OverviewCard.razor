@@ -1,0 +1,17 @@
+﻿<div class="mx-auto card oversikt-color mb-3 " style="max-width: 18rem;">
+    <div class="custom-card">
+        <h5 class="card-title">@TopText</h5>
+        <p class="card-text">@BottomText @(ShowCurrency ? " kr" : "")</p>
+    </div>
+</div>
+
+@code {
+    [Parameter] 
+    public string TopText { get; set; } = null!;
+    
+    [Parameter] 
+    public string BottomText { get; set; } = null!;
+
+    [Parameter] 
+    public bool ShowCurrency { get; set; }
+}

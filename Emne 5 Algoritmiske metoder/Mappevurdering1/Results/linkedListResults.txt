@@ -1,0 +1,1198 @@
+Array length | Linear index | Binary index | Datatype     | Linear Milliseconds  | Binary Milliseconds  | Binary Ms /w sort    | Sort Milliseconds    
+1000         | 65           | ------       | LinkedList   | 0,326500 ms          | ------               | ------               | ------               
+1000         | 410          | ------       | LinkedList   | 0,002000 ms          | ------               | ------               | ------               
+1000         | 508          | ------       | LinkedList   | 0,002500 ms          | ------               | ------               | ------               
+1000         | Nonexistent  | ------       | LinkedList   | 0,033900 ms          | ------               | ------               | ------               
+1000         | Nonexistent  | ------       | LinkedList   | 0,004200 ms          | ------               | ------               | ------               
+1000         | Nonexistent  | ------       | LinkedList   | 0,004300 ms          | ------               | ------               | ------               
+10000        | 5025         | ------       | LinkedList   | 0,020500 ms          | ------               | ------               | ------               
+10000        | 2723         | ------       | LinkedList   | 0,011400 ms          | ------               | ------               | ------               
+10000        | 8733         | ------       | LinkedList   | 0,044000 ms          | ------               | ------               | ------               
+10000        | Nonexistent  | ------       | LinkedList   | 0,059200 ms          | ------               | ------               | ------               
+10000        | Nonexistent  | ------       | LinkedList   | 0,050000 ms          | ------               | ------               | ------               
+10000        | Nonexistent  | ------       | LinkedList   | 0,041200 ms          | ------               | ------               | ------               
+100000       | 86184        | ------       | LinkedList   | 0,345300 ms          | ------               | ------               | ------               
+100000       | 13625        | ------       | LinkedList   | 0,094800 ms          | ------               | ------               | ------               
+100000       | 2302         | ------       | LinkedList   | 0,012500 ms          | ------               | ------               | ------               
+100000       | Nonexistent  | ------       | LinkedList   | 0,514500 ms          | ------               | ------               | ------               
+100000       | Nonexistent  | ------       | LinkedList   | 0,322700 ms          | ------               | ------               | ------               
+100000       | Nonexistent  | ------       | LinkedList   | 0,519900 ms          | ------               | ------               | ------               
+1000000      | 348738       | ------       | LinkedList   | 0,934000 ms          | ------               | ------               | ------               
+1000000      | 831326       | ------       | LinkedList   | 2,286000 ms          | ------               | ------               | ------               
+1000000      | 404486       | ------       | LinkedList   | 1,780500 ms          | ------               | ------               | ------               
+1000000      | Nonexistent  | ------       | LinkedList   | 2,670300 ms          | ------               | ------               | ------               
+1000000      | Nonexistent  | ------       | LinkedList   | 3,226000 ms          | ------               | ------               | ------               
+1000000      | Nonexistent  | ------       | LinkedList   | 2,697500 ms          | ------               | ------               | ------               
+10000000     | 9688026      | ------       | LinkedList   | 26,151000 ms         | ------               | ------               | ------               
+10000000     | 1551384      | ------       | LinkedList   | 4,178700 ms          | ------               | ------               | ------               
+10000000     | 130991       | ------       | LinkedList   | 0,356900 ms          | ------               | ------               | ------               
+10000000     | Nonexistent  | ------       | LinkedList   | 27,180400 ms         | ------               | ------               | ------               
+10000000     | Nonexistent  | ------       | LinkedList   | 27,690400 ms         | ------               | ------               | ------               
+10000000     | Nonexistent  | ------       | LinkedList   | 27,175100 ms         | ------               | ------               | ------               
+1000         | 637          | ------       | LinkedList   | 0,293800 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 206          | ------       | LinkedList   | 0,001200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 592          | ------       | LinkedList   | 0,004800 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,007200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,004600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,005100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 1073         | ------       | LinkedList   | 0,005200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 2770         | ------       | LinkedList   | 0,012600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 3565         | ------       | LinkedList   | 0,023900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,066800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,041300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,050700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 16858        | ------       | LinkedList   | 0,101900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 91271        | ------       | LinkedList   | 0,511100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 99775        | ------       | LinkedList   | 0,502300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,575000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,366800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,351900 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 650543       | ------       | LinkedList   | 2,059600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 268989       | ------       | LinkedList   | 0,902700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 560532       | ------       | LinkedList   | 1,893600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 3,075700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 3,977000 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 2,914800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | 1451707      | ------       | LinkedList   | 6,613100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | 2194423      | ------       | LinkedList   | 6,673700 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | 2342066      | ------       | LinkedList   | 7,084800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 27,262000 ms         | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 28,868200 ms         | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 32,179900 ms         | ------ ms            | ------ ms            | ------ ms           
+1000         | 856          | ------       | LinkedList   | 0,406900 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 205          | ------       | LinkedList   | 0,001600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 548          | ------       | LinkedList   | 0,003600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,007200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,004800 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,005600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 5864         | ------       | LinkedList   | 0,033500 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 4527         | ------       | LinkedList   | 0,030200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 2411         | ------       | LinkedList   | 0,010900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,042400 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,075300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,064700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 28016        | ------       | LinkedList   | 0,175600 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 6464         | ------       | LinkedList   | 0,028200 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 23130        | ------       | LinkedList   | 0,165500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,333900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,269500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,332400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 827345       | ------       | LinkedList   | 2,267600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 503462       | ------       | LinkedList   | 1,668200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | 64633        | ------       | LinkedList   | 0,237700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 4,009400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 5,112200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000000      | Nonexistent  | ------       | LinkedList   | 4,065000 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | 4476312      | ------       | LinkedList   | 21,342000 ms         | ------ ms            | ------ ms            | ------ ms           
+10000000     | 1614269      | ------       | LinkedList   | 8,192700 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | 821015       | ------       | LinkedList   | 4,921800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 46,293000 ms         | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 45,237200 ms         | ------ ms            | ------ ms            | ------ ms           
+10000000     | Nonexistent  | ------       | LinkedList   | 44,295600 ms         | ------ ms            | ------ ms            | ------ ms           
+1000         | 347          | ------       | LinkedList   | 0,290400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 345          | ------       | LinkedList   | 0,002600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 866          | ------       | LinkedList   | 0,005900 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,007200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,004600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,007500 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 485          | ------       | LinkedList   | 0,004300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 6344         | ------       | LinkedList   | 0,026900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 5350         | ------       | LinkedList   | 0,022200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,070500 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,063900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,042000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 15810        | ------       | LinkedList   | 0,064800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 2272         | ------       | LinkedList   | 0,012300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 12273        | ------       | LinkedList   | 0,050300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,503900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,626400 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,482500 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 594          | ------       | LinkedList   | 0,397100 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 274          | ------       | LinkedList   | 0,002500 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 764          | ------       | LinkedList   | 0,003700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,006800 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,007000 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Nonexistent  | ------       | LinkedList   | 0,005300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 91           | ------       | LinkedList   | 0,001400 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 1081         | ------       | LinkedList   | 0,008600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 6998         | ------       | LinkedList   | 0,047300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,068600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,062900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Nonexistent  | ------       | LinkedList   | 0,041100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 92647        | ------       | LinkedList   | 0,375800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 87771        | ------       | LinkedList   | 0,446700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 17847        | ------       | LinkedList   | 0,132000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,510000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,582800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Nonexistent  | ------       | LinkedList   | 0,365900 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 401          | ------       | LinkedList   | 0,294700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 180          | ------       | LinkedList   | 0,001200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 663          | ------       | LinkedList   | 0,003300 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,005600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 4326         | ------       | LinkedList   | 0,022600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 452          | ------       | LinkedList   | 0,002900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 5984         | ------       | LinkedList   | 0,025200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,051100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 31901        | ------       | LinkedList   | 0,161000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 10199        | ------       | LinkedList   | 0,052000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 28525        | ------       | LinkedList   | 0,146200 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,503400 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,689500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,333400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 782          | ------       | LinkedList   | 0,290500 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 583          | ------       | LinkedList   | 0,002600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 811          | ------       | LinkedList   | 0,004400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,006600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004500 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 8436         | ------       | LinkedList   | 0,051200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 4809         | ------       | LinkedList   | 0,020000 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 2055         | ------       | LinkedList   | 0,009100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,059200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,040900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,040400 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 4503         | ------       | LinkedList   | 0,023500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 91991        | ------       | LinkedList   | 0,460800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 77882        | ------       | LinkedList   | 0,733100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,389300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,292400 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,332600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 80           | ------       | LinkedList   | 0,348400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 142          | ------       | LinkedList   | 0,000800 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 487          | ------       | LinkedList   | 0,002300 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,006000 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004700 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 9833         | ------       | LinkedList   | 0,039800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 4384         | ------       | LinkedList   | 0,023000 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 2209         | ------       | LinkedList   | 0,009600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,040800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 54474        | ------       | LinkedList   | 0,408800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 5408         | ------       | LinkedList   | 0,022100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 41651        | ------       | LinkedList   | 0,240300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 1,260200 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 1,158800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,334900 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 225          | ------       | LinkedList   | 0,292300 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 332          | ------       | LinkedList   | 0,002600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 3            | ------       | LinkedList   | 0,000400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,006300 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,005200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 8926         | ------       | LinkedList   | 0,045100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 1652         | ------       | LinkedList   | 0,007100 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 4548         | ------       | LinkedList   | 0,018900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,060700 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041200 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,040700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 64843        | ------       | LinkedList   | 0,464900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 42108        | ------       | LinkedList   | 0,201000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 55780        | ------       | LinkedList   | 0,487900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,436600 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,346300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,593400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 3            | ------       | LinkedList   | 0,390700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 281          | ------       | LinkedList   | 0,002400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 527          | ------       | LinkedList   | 0,003200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,005500 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,004600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 1924         | ------       | LinkedList   | 0,010300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 6465         | ------       | LinkedList   | 0,027600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 5251         | ------       | LinkedList   | 0,021700 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,050400 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,040900 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 17297        | ------       | LinkedList   | 0,086100 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 39475        | ------       | LinkedList   | 0,197600 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 31565        | ------       | LinkedList   | 0,160300 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,586900 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,621200 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,334400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 33           | ------       | LinkedList   | 0,285200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 162          | ------       | LinkedList   | 0,001400 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 52           | ------       | LinkedList   | 0,000700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,006700 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,007200 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | Not found    | ------       | LinkedList   | 0,008300 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 2092         | ------       | LinkedList   | 0,011600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 3277         | ------       | LinkedList   | 0,021500 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | 199          | ------       | LinkedList   | 0,001800 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041400 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041600 ms          | ------ ms            | ------ ms            | ------ ms           
+10000        | Not found    | ------       | LinkedList   | 0,041700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 44704        | ------       | LinkedList   | 0,231000 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 29125        | ------       | LinkedList   | 0,167500 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | 47862        | ------       | LinkedList   | 0,192700 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,395800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,342800 ms          | ------ ms            | ------ ms            | ------ ms           
+100000       | Not found    | ------       | LinkedList   | 0,384600 ms          | ------ ms            | ------ ms            | ------ ms           
+1000         | 459          | ------       | LinkedList   | 0,295600             | ------               | ------               | ------              
+1000         | 36           | ------       | LinkedList   | 0,000500             | ------               | ------               | ------              
+1000         | 379          | ------       | LinkedList   | 0,001900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+10000        | 259          | ------       | LinkedList   | 0,001700             | ------               | ------               | ------              
+10000        | 1176         | ------       | LinkedList   | 0,006200             | ------               | ------               | ------              
+10000        | 5839         | ------       | LinkedList   | 0,024000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,041300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,062100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,059100             | ------               | ------               | ------              
+100000       | 91638        | ------       | LinkedList   | 0,459300             | ------               | ------               | ------              
+100000       | 30227        | ------       | LinkedList   | 0,222500             | ------               | ------               | ------              
+100000       | 20226        | ------       | LinkedList   | 0,057300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,399800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,334700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,338300             | ------               | ------               | ------              
+1000         | 365          | ------       | LinkedList   | 0,287500             | ------               | ------               | ------              
+1000         | 875          | ------       | LinkedList   | 0,003900             | ------               | ------               | ------              
+1000         | 79           | ------       | LinkedList   | 0,000600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007500             | ------               | ------               | ------              
+10000        | 1863         | ------       | LinkedList   | 0,012100             | ------               | ------               | ------              
+10000        | 3362         | ------       | LinkedList   | 0,020700             | ------               | ------               | ------              
+10000        | 1161         | ------       | LinkedList   | 0,006500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,058600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,058700             | ------               | ------               | ------              
+100000       | 25564        | ------       | LinkedList   | 0,129400             | ------               | ------               | ------              
+100000       | 34339        | ------       | LinkedList   | 0,173700             | ------               | ------               | ------              
+100000       | 21590        | ------       | LinkedList   | 0,109900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,601100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,276400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,305500             | ------               | ------               | ------              
+1000         | 924          | ------       | LinkedList   | 0,292600             | ------               | ------               | ------              
+1000         | 348          | ------       | LinkedList   | 0,002000             | ------               | ------               | ------              
+1000         | 342          | ------       | LinkedList   | 0,001900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004600             | ------               | ------               | ------              
+10000        | 1610         | ------       | LinkedList   | 0,008700             | ------               | ------               | ------              
+10000        | 5448         | ------       | LinkedList   | 0,022900             | ------               | ------               | ------              
+10000        | 3138         | ------       | LinkedList   | 0,013200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040900             | ------               | ------               | ------              
+100000       | 89329        | ------       | LinkedList   | 0,360200             | ------               | ------               | ------              
+100000       | 25308        | ------       | LinkedList   | 0,126700             | ------               | ------               | ------              
+100000       | 58009        | ------       | LinkedList   | 0,330700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,903900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,864100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,332100             | ------               | ------               | ------              
+1000         | 231          | ------       | LinkedList   | 0,299500             | ------               | ------               | ------              
+1000         | 723          | ------       | LinkedList   | 0,003400             | ------               | ------               | ------              
+1000         | 403          | ------       | LinkedList   | 0,001900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+10000        | 3320         | ------       | LinkedList   | 0,017100             | ------               | ------               | ------              
+10000        | 1920         | ------       | LinkedList   | 0,008200             | ------               | ------               | ------              
+10000        | 205          | ------       | LinkedList   | 0,001700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,041500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040900             | ------               | ------               | ------              
+100000       | 14468        | ------       | LinkedList   | 0,072900             | ------               | ------               | ------              
+100000       | 2027         | ------       | LinkedList   | 0,010900             | ------               | ------               | ------              
+100000       | 95893        | ------       | LinkedList   | 0,548500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,332100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,398500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,358200             | ------               | ------               | ------              
+1000         | 630          | ------       | LinkedList   | 0,296000             | ------               | ------               | ------              
+1000         | 209          | ------       | LinkedList   | 0,001600             | ------               | ------               | ------              
+1000         | 520          | ------       | LinkedList   | 0,002900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+10000        | 7980         | ------       | LinkedList   | 0,032800             | ------               | ------               | ------              
+10000        | 6703         | ------       | LinkedList   | 0,029000             | ------               | ------               | ------              
+10000        | 5025         | ------       | LinkedList   | 0,021100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,062400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,071200             | ------               | ------               | ------              
+100000       | 21875        | ------       | LinkedList   | 0,088600             | ------               | ------               | ------              
+100000       | 86576        | ------       | LinkedList   | 0,437200             | ------               | ------               | ------              
+100000       | 82753        | ------       | LinkedList   | 0,418800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,505900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,668100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,334700             | ------               | ------               | ------              
+1000000      | 13273        | ------       | LinkedList   | 0,036400             | ------               | ------               | ------              
+1000000      | 224713       | ------       | LinkedList   | 0,749400             | ------               | ------               | ------              
+1000000      | 47943        | ------       | LinkedList   | 0,163500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,974700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,951700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,009600             | ------               | ------               | ------              
+10000000     | 5297269      | ------       | LinkedList   | 16,440800            | ------               | ------               | ------              
+10000000     | 6905977      | ------       | LinkedList   | 19,149100            | ------               | ------               | ------              
+10000000     | 5374462      | ------       | LinkedList   | 14,690300            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 30,472800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 36,574400            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,479900            | ------               | ------               | ------              
+1000         | 651          | ------       | LinkedList   | 0,294300             | ------               | ------               | ------              
+1000         | 543          | ------       | LinkedList   | 0,003100             | ------               | ------               | ------              
+1000         | 478          | ------       | LinkedList   | 0,002400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+10000        | 6787         | ------       | LinkedList   | 0,041000             | ------               | ------               | ------              
+10000        | 4679         | ------       | LinkedList   | 0,019900             | ------               | ------               | ------              
+10000        | 7940         | ------       | LinkedList   | 0,032900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,061400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,046500             | ------               | ------               | ------              
+100000       | 506          | ------       | LinkedList   | 0,003600             | ------               | ------               | ------              
+100000       | 65957        | ------       | LinkedList   | 0,331900             | ------               | ------               | ------              
+100000       | 84622        | ------       | LinkedList   | 0,503600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,369700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,395500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,331000             | ------               | ------               | ------              
+1000000      | 264499       | ------       | LinkedList   | 0,952100             | ------               | ------               | ------              
+1000000      | 421600       | ------       | LinkedList   | 1,361600             | ------               | ------               | ------              
+1000000      | 701558       | ------       | LinkedList   | 2,170100             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,224600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,094300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,850600             | ------               | ------               | ------              
+10000000     | 6591006      | ------       | LinkedList   | 18,356500            | ------               | ------               | ------              
+10000000     | 7958807      | ------       | LinkedList   | 22,337900            | ------               | ------               | ------              
+10000000     | 2883648      | ------       | LinkedList   | 8,197500             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,998500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,258300            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,140700            | ------               | ------               | ------              
+1000         | 529          | ------       | LinkedList   | 0,309100             | ------               | ------               | ------              
+1000         | 796          | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+1000         | 92           | ------       | LinkedList   | 0,000700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004500             | ------               | ------               | ------              
+10000        | 5068         | ------       | LinkedList   | 0,026200             | ------               | ------               | ------              
+10000        | 2059         | ------       | LinkedList   | 0,011100             | ------               | ------               | ------              
+10000        | 1837         | ------       | LinkedList   | 0,011200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,058300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,063300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,066600             | ------               | ------               | ------              
+100000       | 99803        | ------       | LinkedList   | 0,502600             | ------               | ------               | ------              
+100000       | 69794        | ------       | LinkedList   | 0,349900             | ------               | ------               | ------              
+100000       | 62556        | ------       | LinkedList   | 0,211900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,338100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,342100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,335600             | ------               | ------               | ------              
+1000000      | 690625       | ------       | LinkedList   | 2,086300             | ------               | ------               | ------              
+1000000      | 483343       | ------       | LinkedList   | 1,503400             | ------               | ------               | ------              
+1000000      | 189009       | ------       | LinkedList   | 0,630300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,722200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,050000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,088100             | ------               | ------               | ------              
+10000000     | 3909467      | ------       | LinkedList   | 11,423400            | ------               | ------               | ------              
+10000000     | 1694176      | ------       | LinkedList   | 4,575500             | ------               | ------               | ------              
+10000000     | 1750235      | ------       | LinkedList   | 5,511400             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,390500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,422800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 36,307000            | ------               | ------               | ------              
+1000         | 116          | ------       | LinkedList   | 0,290400             | ------               | ------               | ------              
+1000         | 90           | ------       | LinkedList   | 0,001100             | ------               | ------               | ------              
+1000         | 244          | ------       | LinkedList   | 0,001400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004300             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007700             | ------               | ------               | ------              
+10000        | 4857         | ------       | LinkedList   | 0,020500             | ------               | ------               | ------              
+10000        | 412          | ------       | LinkedList   | 0,002200             | ------               | ------               | ------              
+10000        | 4503         | ------       | LinkedList   | 0,023300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,061600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,057900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,061800             | ------               | ------               | ------              
+100000       | 65429        | ------       | LinkedList   | 0,331100             | ------               | ------               | ------              
+100000       | 31920        | ------       | LinkedList   | 0,162300             | ------               | ------               | ------              
+100000       | 51820        | ------       | LinkedList   | 0,297800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,505500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,933000             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,298900             | ------               | ------               | ------              
+1000000      | 57186        | ------       | LinkedList   | 0,213100             | ------               | ------               | ------              
+1000000      | 502181       | ------       | LinkedList   | 1,587400             | ------               | ------               | ------              
+1000000      | 612580       | ------       | LinkedList   | 2,075400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,018600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,725300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,063700             | ------               | ------               | ------              
+10000000     | 808531       | ------       | LinkedList   | 2,751800             | ------               | ------               | ------              
+10000000     | 3349097      | ------       | LinkedList   | 9,775400             | ------               | ------               | ------              
+10000000     | 4739154      | ------       | LinkedList   | 13,129700            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 31,179900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,549900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,583000            | ------               | ------               | ------              
+1000         | 299          | ------       | LinkedList   | 0,344200             | ------               | ------               | ------              
+1000         | 899          | ------       | LinkedList   | 0,005000             | ------               | ------               | ------              
+1000         | 213          | ------       | LinkedList   | 0,001400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+10000        | 3163         | ------       | LinkedList   | 0,013500             | ------               | ------               | ------              
+10000        | 342          | ------       | LinkedList   | 0,002100             | ------               | ------               | ------              
+10000        | 356          | ------       | LinkedList   | 0,002600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,065300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,060600             | ------               | ------               | ------              
+100000       | 6067         | ------       | LinkedList   | 0,024900             | ------               | ------               | ------              
+100000       | 6441         | ------       | LinkedList   | 0,033200             | ------               | ------               | ------              
+100000       | 19355        | ------       | LinkedList   | 0,091500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,730300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,724100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,338000             | ------               | ------               | ------              
+1000000      | 60799        | ------       | LinkedList   | 0,243400             | ------               | ------               | ------              
+1000000      | 629399       | ------       | LinkedList   | 2,399000             | ------               | ------               | ------              
+1000000      | 7982         | ------       | LinkedList   | 0,034800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,175900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,035900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,010000             | ------               | ------               | ------              
+10000000     | 190601       | ------       | LinkedList   | 0,636300             | ------               | ------               | ------              
+10000000     | 9053397      | ------       | LinkedList   | 30,011900            | ------               | ------               | ------              
+10000000     | 2064816      | ------       | LinkedList   | 5,665200             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,620900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,014600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,821600            | ------               | ------               | ------              
+1000         | 441          | ------       | LinkedList   | 0,347900             | ------               | ------               | ------              
+1000         | 497          | ------       | LinkedList   | 0,002300             | ------               | ------               | ------              
+1000         | 609          | ------       | LinkedList   | 0,002700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004600             | ------               | ------               | ------              
+10000        | 1202         | ------       | LinkedList   | 0,005300             | ------               | ------               | ------              
+10000        | 9159         | ------       | LinkedList   | 0,046600             | ------               | ------               | ------              
+10000        | 967          | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,051400             | ------               | ------               | ------              
+100000       | 15158        | ------       | LinkedList   | 0,078800             | ------               | ------               | ------              
+100000       | 31569        | ------       | LinkedList   | 0,159600             | ------               | ------               | ------              
+100000       | 33437        | ------       | LinkedList   | 0,168400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,501700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,616600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,274700             | ------               | ------               | ------              
+1000000      | 730288       | ------       | LinkedList   | 2,357800             | ------               | ------               | ------              
+1000000      | 423485       | ------       | LinkedList   | 1,483300             | ------               | ------               | ------              
+1000000      | 242165       | ------       | LinkedList   | 0,714800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,879200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,002800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,832800             | ------               | ------               | ------              
+10000000     | 642305       | ------       | LinkedList   | 2,137800             | ------               | ------               | ------              
+10000000     | 1469983      | ------       | LinkedList   | 4,348600             | ------               | ------               | ------              
+10000000     | 6594714      | ------       | LinkedList   | 24,006800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,364800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,791600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,854000            | ------               | ------               | ------              
+1000         | 137          | ------       | LinkedList   | 0,367200             | ------               | ------               | ------              
+1000         | 881          | ------       | LinkedList   | 0,005000             | ------               | ------               | ------              
+1000         | 363          | ------       | LinkedList   | 0,001900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008100             | ------               | ------               | ------              
+10000        | 5375         | ------       | LinkedList   | 0,024400             | ------               | ------               | ------              
+10000        | 6573         | ------       | LinkedList   | 0,030600             | ------               | ------               | ------              
+10000        | 6486         | ------       | LinkedList   | 0,030200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,073900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,077600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,073200             | ------               | ------               | ------              
+100000       | 72141        | ------       | LinkedList   | 0,319200             | ------               | ------               | ------              
+100000       | 12580        | ------       | LinkedList   | 0,056600             | ------               | ------               | ------              
+100000       | 49051        | ------       | LinkedList   | 0,385200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,314100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,429500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,448500             | ------               | ------               | ------              
+1000000      | 608016       | ------       | LinkedList   | 2,238200             | ------               | ------               | ------              
+1000000      | 375528       | ------       | LinkedList   | 1,081800             | ------               | ------               | ------              
+1000         | 453          | ------       | LinkedList   | 0,297200             | ------               | ------               | ------              
+1000         | 131          | ------       | LinkedList   | 0,001100             | ------               | ------               | ------              
+1000         | 224          | ------       | LinkedList   | 0,001800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+10000        | 1692         | ------       | LinkedList   | 0,007500             | ------               | ------               | ------              
+10000        | 7891         | ------       | LinkedList   | 0,041400             | ------               | ------               | ------              
+10000        | 5855         | ------       | LinkedList   | 0,025000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,059000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,063900             | ------               | ------               | ------              
+100000       | 12310        | ------       | LinkedList   | 0,074500             | ------               | ------               | ------              
+100000       | 27453        | ------       | LinkedList   | 0,137800             | ------               | ------               | ------              
+100000       | 45868        | ------       | LinkedList   | 0,260400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,986900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,387200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,413900             | ------               | ------               | ------              
+1000000      | 409879       | ------       | LinkedList   | 1,383700             | ------               | ------               | ------              
+1000         | 189          | ------       | LinkedList   | 0,445700             | ------               | ------               | ------              
+1000         | 345          | ------       | LinkedList   | 0,002100             | ------               | ------               | ------              
+1000         | 53           | ------       | LinkedList   | 0,000700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007800             | ------               | ------               | ------              
+10000        | 597          | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+10000        | 3589         | ------       | LinkedList   | 0,016600             | ------               | ------               | ------              
+10000        | 7252         | ------       | LinkedList   | 0,032700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,335800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045800             | ------               | ------               | ------              
+100000       | 16969        | ------       | LinkedList   | 0,075900             | ------               | ------               | ------              
+100000       | 708          | ------       | LinkedList   | 0,003900             | ------               | ------               | ------              
+100000       | 13954        | ------       | LinkedList   | 0,092400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,558100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,367500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,295800             | ------               | ------               | ------              
+1000000      | 583062       | ------       | LinkedList   | 1,882500             | ------               | ------               | ------              
+1000000      | 82843        | ------       | LinkedList   | 0,278500             | ------               | ------               | ------              
+1000000      | 756398       | ------       | LinkedList   | 2,123600             | ------               | ------               | ------              
+1000         | 307          | ------       | LinkedList   | 0,298800             | ------               | ------               | ------              
+1000         | 138          | ------       | LinkedList   | 0,001600             | ------               | ------               | ------              
+1000         | 309          | ------       | LinkedList   | 0,002600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007200             | ------               | ------               | ------              
+10000        | 288          | ------       | LinkedList   | 0,002200             | ------               | ------               | ------              
+10000        | 367          | ------       | LinkedList   | 0,002600             | ------               | ------               | ------              
+10000        | 1068         | ------       | LinkedList   | 0,005600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,064200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,041400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,041400             | ------               | ------               | ------              
+100000       | 24852        | ------       | LinkedList   | 0,127000             | ------               | ------               | ------              
+100000       | 63093        | ------       | LinkedList   | 0,316600             | ------               | ------               | ------              
+100000       | 45157        | ------       | LinkedList   | 0,259400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,398700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,334900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,333800             | ------               | ------               | ------              
+1000000      | 568538       | ------       | LinkedList   | 1,752600             | ------               | ------               | ------              
+1000000      | 69328        | ------       | LinkedList   | 0,279100             | ------               | ------               | ------              
+1000000      | 383090       | ------       | LinkedList   | 1,291200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,153100             | ------               | ------               | ------              
+1000         | 753          | ------       | LinkedList   | 0,315900             | ------               | ------               | ------              
+1000         | 374          | ------       | LinkedList   | 0,003400             | ------               | ------               | ------              
+1000         | 461          | ------       | LinkedList   | 0,002600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005200             | ------               | ------               | ------              
+10000        | 1269         | ------       | LinkedList   | 0,006400             | ------               | ------               | ------              
+10000        | 887          | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+10000        | 5075         | ------       | LinkedList   | 0,022900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,070100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,069300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044700             | ------               | ------               | ------              
+100000       | 37402        | ------       | LinkedList   | 0,166500             | ------               | ------               | ------              
+100000       | 15522        | ------       | LinkedList   | 0,103900             | ------               | ------               | ------              
+100000       | 47868        | ------       | LinkedList   | 0,318100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,486300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,785500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,669300             | ------               | ------               | ------              
+1000000      | 64919        | ------       | LinkedList   | 0,212200             | ------               | ------               | ------              
+1000000      | 467878       | ------       | LinkedList   | 1,785900             | ------               | ------               | ------              
+1000000      | 404294       | ------       | LinkedList   | 1,543900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,567600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,627000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,434900             | ------               | ------               | ------              
+10000000     | 6815865      | ------       | LinkedList   | 21,544300            | ------               | ------               | ------              
+10000000     | 485251       | ------       | LinkedList   | 1,739900             | ------               | ------               | ------              
+10000000     | 7273431      | ------       | LinkedList   | 22,786700            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 38,194000            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 31,023900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 31,224700            | ------               | ------               | ------              
+1000         | 128          | ------       | LinkedList   | 0,329600             | ------               | ------               | ------              
+1000         | 361          | ------       | LinkedList   | 0,002000             | ------               | ------               | ------              
+1000         | 911          | ------       | LinkedList   | 0,004300             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008400             | ------               | ------               | ------              
+10000        | 1180         | ------       | LinkedList   | 0,009000             | ------               | ------               | ------              
+10000        | 5655         | ------       | LinkedList   | 0,025600             | ------               | ------               | ------              
+10000        | 7756         | ------       | LinkedList   | 0,034900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+100000       | 79623        | ------       | LinkedList   | 0,360700             | ------               | ------               | ------              
+100000       | 76526        | ------       | LinkedList   | 0,337700             | ------               | ------               | ------              
+100000       | 71825        | ------       | LinkedList   | 0,319600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,693600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,350500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,365200             | ------               | ------               | ------              
+1000000      | 941462       | ------       | LinkedList   | 3,065100             | ------               | ------               | ------              
+1000000      | 299731       | ------       | LinkedList   | 1,068000             | ------               | ------               | ------              
+1000000      | 253551       | ------       | LinkedList   | 0,921500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,765500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,023200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,017100             | ------               | ------               | ------              
+10000000     | 2265293      | ------       | LinkedList   | 7,097500             | ------               | ------               | ------              
+10000000     | 2567380      | ------       | LinkedList   | 7,618300             | ------               | ------               | ------              
+10000000     | 229278       | ------       | LinkedList   | 0,663000             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,405600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,937500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,663900            | ------               | ------               | ------              
+1000         | 828          | ------       | LinkedList   | 0,318100             | ------               | ------               | ------              
+1000         | 725          | ------       | LinkedList   | 0,003800             | ------               | ------               | ------              
+1000         | 806          | ------       | LinkedList   | 0,006400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+10000        | 1847         | ------       | LinkedList   | 0,008900             | ------               | ------               | ------              
+10000        | 3485         | ------       | LinkedList   | 0,016000             | ------               | ------               | ------              
+10000        | 5032         | ------       | LinkedList   | 0,023200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044500             | ------               | ------               | ------              
+100000       | 62908        | ------       | LinkedList   | 0,314900             | ------               | ------               | ------              
+100000       | 63785        | ------       | LinkedList   | 0,281400             | ------               | ------               | ------              
+100000       | 73992        | ------       | LinkedList   | 0,370900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,855600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,315600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,336800             | ------               | ------               | ------              
+1000000      | 827421       | ------       | LinkedList   | 2,916200             | ------               | ------               | ------              
+1000000      | 259908       | ------       | LinkedList   | 0,926700             | ------               | ------               | ------              
+1000000      | 427268       | ------       | LinkedList   | 1,512800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,896300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,878600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,872600             | ------               | ------               | ------              
+10000000     | 9851164      | ------       | LinkedList   | 30,167600            | ------               | ------               | ------              
+10000000     | 1251564      | ------       | LinkedList   | 3,797500             | ------               | ------               | ------              
+10000000     | 3103024      | ------       | LinkedList   | 10,566600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,720100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,598900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 36,296500            | ------               | ------               | ------              
+1000         | 854          | ------       | LinkedList   | 0,332800             | ------               | ------               | ------              
+1000         | 430          | ------       | LinkedList   | 0,002500             | ------               | ------               | ------              
+1000         | 81           | ------       | LinkedList   | 0,000700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005300             | ------               | ------               | ------              
+10000        | 347          | ------       | LinkedList   | 0,002400             | ------               | ------               | ------              
+10000        | 1764         | ------       | LinkedList   | 0,008600             | ------               | ------               | ------              
+10000        | 5558         | ------       | LinkedList   | 0,025600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,062500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,067000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045400             | ------               | ------               | ------              
+100000       | 90595        | ------       | LinkedList   | 0,404000             | ------               | ------               | ------              
+100000       | 61597        | ------       | LinkedList   | 0,272200             | ------               | ------               | ------              
+100000       | 33368        | ------       | LinkedList   | 0,169900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,931600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,295500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,295900             | ------               | ------               | ------              
+1000000      | 466786       | ------       | LinkedList   | 1,609900             | ------               | ------               | ------              
+1000000      | 685553       | ------       | LinkedList   | 2,179500             | ------               | ------               | ------              
+1000000      | 129337       | ------       | LinkedList   | 0,432100             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,065300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,100200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,085000             | ------               | ------               | ------              
+10000000     | 2392875      | ------       | LinkedList   | 6,813800             | ------               | ------               | ------              
+10000000     | 4256031      | ------       | LinkedList   | 12,093100            | ------               | ------               | ------              
+10000000     | 807840       | ------       | LinkedList   | 2,338800             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,314100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,125500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 32,093600            | ------               | ------               | ------              
+1000         | 259          | ------       | LinkedList   | 0,312300             | ------               | ------               | ------              
+1000         | 707          | ------       | LinkedList   | 0,003600             | ------               | ------               | ------              
+1000         | 441          | ------       | LinkedList   | 0,002400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005400             | ------               | ------               | ------              
+10000        | 5061         | ------       | LinkedList   | 0,022800             | ------               | ------               | ------              
+10000        | 2264         | ------       | LinkedList   | 0,010700             | ------               | ------               | ------              
+10000        | 8106         | ------       | LinkedList   | 0,036500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,083400             | ------               | ------               | ------              
+100000       | 39833        | ------       | LinkedList   | 0,176400             | ------               | ------               | ------              
+100000       | 34098        | ------       | LinkedList   | 0,152400             | ------               | ------               | ------              
+100000       | 34032        | ------       | LinkedList   | 0,186500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,946500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,365000             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,374900             | ------               | ------               | ------              
+1000000      | 678529       | ------       | LinkedList   | 2,485800             | ------               | ------               | ------              
+1000000      | 245001       | ------       | LinkedList   | 0,707700             | ------               | ------               | ------              
+1000000      | 573625       | ------       | LinkedList   | 2,056400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,656400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,182900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,413700             | ------               | ------               | ------              
+10000000     | 4113341      | ------       | LinkedList   | 12,571800            | ------               | ------               | ------              
+10000000     | 7312987      | ------       | LinkedList   | 34,086600            | ------               | ------               | ------              
+10000000     | 3674609      | ------       | LinkedList   | 17,217500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 42,783200            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 47,909500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 40,524300            | ------               | ------               | ------              
+1000         | 242          | ------       | LinkedList   | 0,322300             | ------               | ------               | ------              
+1000         | 553          | ------       | LinkedList   | 0,003400             | ------               | ------               | ------              
+1000         | 122          | ------       | LinkedList   | 0,001000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007600             | ------               | ------               | ------              
+10000        | 6649         | ------       | LinkedList   | 0,030100             | ------               | ------               | ------              
+10000        | 9738         | ------       | LinkedList   | 0,044400             | ------               | ------               | ------              
+10000        | 3581         | ------       | LinkedList   | 0,016600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+100000       | 35745        | ------       | LinkedList   | 0,158900             | ------               | ------               | ------              
+100000       | 16035        | ------       | LinkedList   | 0,093600             | ------               | ------               | ------              
+100000       | 67714        | ------       | LinkedList   | 0,301100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,575800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,317200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,318200             | ------               | ------               | ------              
+1000000      | 176736       | ------       | LinkedList   | 0,635400             | ------               | ------               | ------              
+1000         | 435          | ------       | LinkedList   | 0,350000             | ------               | ------               | ------              
+1000         | 588          | ------       | LinkedList   | 0,003500             | ------               | ------               | ------              
+1000         | 651          | ------       | LinkedList   | 0,004100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007600             | ------               | ------               | ------              
+10000        | 2557         | ------       | LinkedList   | 0,012000             | ------               | ------               | ------              
+10000        | 3005         | ------       | LinkedList   | 0,023300             | ------               | ------               | ------              
+10000        | 3078         | ------       | LinkedList   | 0,014300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,071400             | ------               | ------               | ------              
+100000       | 12744        | ------       | LinkedList   | 0,057100             | ------               | ------               | ------              
+100000       | 77872        | ------       | LinkedList   | 0,427900             | ------               | ------               | ------              
+100000       | 3273         | ------       | LinkedList   | 0,015500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,603100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,318500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,356200             | ------               | ------               | ------              
+1000000      | 236878       | ------       | LinkedList   | 0,915700             | ------               | ------               | ------              
+1000000      | 143002       | ------       | LinkedList   | 0,512400             | ------               | ------               | ------              
+1000000      | 65414        | ------       | LinkedList   | 0,237300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,227000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,376200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,256900             | ------               | ------               | ------              
+10000000     | 3397447      | ------       | LinkedList   | 10,404400            | ------               | ------               | ------              
+10000000     | 4349258      | ------       | LinkedList   | 14,152700            | ------               | ------               | ------              
+10000000     | 3309456      | ------       | LinkedList   | 10,328400            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 30,078300            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 30,354900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,820000            | ------               | ------               | ------              
+1000         | 873          | ------       | LinkedList   | 0,330300             | ------               | ------               | ------              
+1000         | 382          | ------       | LinkedList   | 0,002300             | ------               | ------               | ------              
+1000         | 860          | ------       | LinkedList   | 0,004200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005600             | ------               | ------               | ------              
+10000        | 2179         | ------       | LinkedList   | 0,015600             | ------               | ------               | ------              
+10000        | 5160         | ------       | LinkedList   | 0,024200             | ------               | ------               | ------              
+10000        | 2370         | ------       | LinkedList   | 0,011400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,049400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,056700             | ------               | ------               | ------              
+100000       | 6466         | ------       | LinkedList   | 0,043600             | ------               | ------               | ------              
+100000       | 35319        | ------       | LinkedList   | 0,195300             | ------               | ------               | ------              
+100000       | 57941        | ------       | LinkedList   | 0,289900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,774500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,427600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,424900             | ------               | ------               | ------              
+1000000      | 249206       | ------       | LinkedList   | 0,891400             | ------               | ------               | ------              
+1000000      | 191145       | ------       | LinkedList   | 0,681800             | ------               | ------               | ------              
+1000000      | 25381        | ------       | LinkedList   | 0,091100             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,335200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,246000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,874900             | ------               | ------               | ------              
+10000000     | 3275274      | ------       | LinkedList   | 10,499700            | ------               | ------               | ------              
+10000000     | 699848       | ------       | LinkedList   | 3,213600             | ------               | ------               | ------              
+10000000     | 2202711      | ------       | LinkedList   | 7,229900             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,493900            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 32,912100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,820800            | ------               | ------               | ------              
+1000         | 152          | ------       | LinkedList   | 0,314300             | ------               | ------               | ------              
+1000         | 47           | ------       | LinkedList   | 0,000800             | ------               | ------               | ------              
+1000         | 203          | ------       | LinkedList   | 0,001400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+10000        | 18           | ------       | LinkedList   | 0,000700             | ------               | ------               | ------              
+10000        | 4224         | ------       | LinkedList   | 0,031400             | ------               | ------               | ------              
+10000        | 2760         | ------       | LinkedList   | 0,012900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,068100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044700             | ------               | ------               | ------              
+100000       | 78307        | ------       | LinkedList   | 0,346300             | ------               | ------               | ------              
+100000       | 42162        | ------       | LinkedList   | 0,189400             | ------               | ------               | ------              
+100000       | 9898         | ------       | LinkedList   | 0,051100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,871400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,673900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,283200             | ------               | ------               | ------              
+1000000      | 32601        | ------       | LinkedList   | 0,132000             | ------               | ------               | ------              
+1000000      | 579359       | ------       | LinkedList   | 1,924100             | ------               | ------               | ------              
+1000000      | 212873       | ------       | LinkedList   | 0,705500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,067800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,013900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,699300             | ------               | ------               | ------              
+10000000     | 479696       | ------       | LinkedList   | 1,594700             | ------               | ------               | ------              
+10000000     | 2548433      | ------       | LinkedList   | 8,055200             | ------               | ------               | ------              
+10000000     | 8988892      | ------       | LinkedList   | 25,265500            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,881100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,209600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,932700            | ------               | ------               | ------              
+1000         | 314          | ------       | LinkedList   | 0,319300             | ------               | ------               | ------              
+1000         | 29           | ------       | LinkedList   | 0,000400             | ------               | ------               | ------              
+1000         | 504          | ------       | LinkedList   | 0,003600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+10000        | 3381         | ------       | LinkedList   | 0,015600             | ------               | ------               | ------              
+10000        | 215          | ------       | LinkedList   | 0,001600             | ------               | ------               | ------              
+10000        | 2180         | ------       | LinkedList   | 0,011500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,067500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,069700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,072400             | ------               | ------               | ------              
+100000       | 4730         | ------       | LinkedList   | 0,021700             | ------               | ------               | ------              
+100000       | 68972        | ------       | LinkedList   | 0,457500             | ------               | ------               | ------              
+100000       | 40830        | ------       | LinkedList   | 0,181900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,521600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,507200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,357600             | ------               | ------               | ------              
+1000000      | 587607       | ------       | LinkedList   | 2,094800             | ------               | ------               | ------              
+1000000      | 464957       | ------       | LinkedList   | 1,539600             | ------               | ------               | ------              
+1000000      | 633655       | ------       | LinkedList   | 1,853600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,509300             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,195500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,356600             | ------               | ------               | ------              
+10000000     | 4560193      | ------       | LinkedList   | 14,307900            | ------               | ------               | ------              
+10000000     | 90803        | ------       | LinkedList   | 0,326500             | ------               | ------               | ------              
+10000000     | 6159210      | ------       | LinkedList   | 19,538100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,230800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,727200            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 30,364400            | ------               | ------               | ------              
+1000         | 86           | ------       | LinkedList   | 0,319600             | ------               | ------               | ------              
+1000         | 50           | ------       | LinkedList   | 0,000600             | ------               | ------               | ------              
+1000         | 7            | ------       | LinkedList   | 0,000400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006300             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008100             | ------               | ------               | ------              
+10000        | 3786         | ------       | LinkedList   | 0,017400             | ------               | ------               | ------              
+10000        | 2924         | ------       | LinkedList   | 0,014500             | ------               | ------               | ------              
+10000        | 73           | ------       | LinkedList   | 0,000800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,064400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044700             | ------               | ------               | ------              
+100000       | 3586         | ------       | LinkedList   | 0,016800             | ------               | ------               | ------              
+100000       | 23379        | ------       | LinkedList   | 0,109600             | ------               | ------               | ------              
+100000       | 1493         | ------       | LinkedList   | 0,011700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,951200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,342000             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,435400             | ------               | ------               | ------              
+1000000      | 268512       | ------       | LinkedList   | 0,976500             | ------               | ------               | ------              
+1000000      | 69352        | ------       | LinkedList   | 0,232100             | ------               | ------               | ------              
+1000000      | 580810       | ------       | LinkedList   | 1,808500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,846800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,831400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,123800             | ------               | ------               | ------              
+10000000     | 6512790      | ------       | LinkedList   | 18,317100            | ------               | ------               | ------              
+10000000     | 6697903      | ------       | LinkedList   | 19,763200            | ------               | ------               | ------              
+10000000     | 1154950      | ------       | LinkedList   | 3,303600             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,106600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,608800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,241600            | ------               | ------               | ------              
+1000         | 36           | ------       | LinkedList   | 0,328200             | ------               | ------               | ------              
+1000         | 191          | ------       | LinkedList   | 0,001700             | ------               | ------               | ------              
+1000         | 461          | ------       | LinkedList   | 0,003800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+10000        | 8732         | ------       | LinkedList   | 0,039100             | ------               | ------               | ------              
+10000        | 641          | ------       | LinkedList   | 0,003600             | ------               | ------               | ------              
+10000        | 243          | ------       | LinkedList   | 0,001800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,069300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,045200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,072600             | ------               | ------               | ------              
+100000       | 27791        | ------       | LinkedList   | 0,124100             | ------               | ------               | ------              
+100000       | 34028        | ------       | LinkedList   | 0,151000             | ------               | ------               | ------              
+100000       | 6974         | ------       | LinkedList   | 0,036700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,901500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,294700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,293400             | ------               | ------               | ------              
+1000000      | 250992       | ------       | LinkedList   | 0,897700             | ------               | ------               | ------              
+1000000      | 605680       | ------       | LinkedList   | 1,923400             | ------               | ------               | ------              
+1000000      | 94939        | ------       | LinkedList   | 0,327700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,108600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,946900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,107500             | ------               | ------               | ------              
+10000000     | 1197139      | ------       | LinkedList   | 3,932800             | ------               | ------               | ------              
+10000000     | 8009847      | ------       | LinkedList   | 23,256300            | ------               | ------               | ------              
+10000000     | 5351736      | ------       | LinkedList   | 15,438800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 26,761800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,813100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,147300            | ------               | ------               | ------              
+1000         | 578          | ------       | LinkedList   | 0,415000             | ------               | ------               | ------              
+1000         | 70           | ------       | LinkedList   | 0,000900             | ------               | ------               | ------              
+1000         | 839          | ------       | LinkedList   | 0,007900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,009800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005300             | ------               | ------               | ------              
+10000        | 3860         | ------       | LinkedList   | 0,020200             | ------               | ------               | ------              
+10000        | 4197         | ------       | LinkedList   | 0,017600             | ------               | ------               | ------              
+10000        | 910          | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,061300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,051100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,049800             | ------               | ------               | ------              
+100000       | 747          | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+100000       | 52655        | ------       | LinkedList   | 0,264900             | ------               | ------               | ------              
+100000       | 46454        | ------       | LinkedList   | 0,263700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,713500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,583900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,780600             | ------               | ------               | ------              
+1000000      | 494216       | ------       | LinkedList   | 1,640000             | ------               | ------               | ------              
+1000000      | 351138       | ------       | LinkedList   | 1,171300             | ------               | ------               | ------              
+1000000      | 154068       | ------       | LinkedList   | 0,513500             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,345400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,020000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,998500             | ------               | ------               | ------              
+10000000     | 2814242      | ------       | LinkedList   | 8,635100             | ------               | ------               | ------              
+10000000     | 618966       | ------       | LinkedList   | 2,076700             | ------               | ------               | ------              
+10000000     | 5698759      | ------       | LinkedList   | 16,458600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 29,239600            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,614400            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,295100            | ------               | ------               | ------              
+1000         | 80           | ------       | LinkedList   | 0,289800             | ------               | ------               | ------              
+1000         | 595          | ------       | LinkedList   | 0,003900             | ------               | ------               | ------              
+1000         | 463          | ------       | LinkedList   | 0,004000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,006900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007600             | ------               | ------               | ------              
+10000        | 824          | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+10000        | 6124         | ------       | LinkedList   | 0,025000             | ------               | ------               | ------              
+10000        | 1754         | ------       | LinkedList   | 0,011300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,042100             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,051900             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,040600             | ------               | ------               | ------              
+100000       | 90058        | ------       | LinkedList   | 0,451500             | ------               | ------               | ------              
+100000       | 1359         | ------       | LinkedList   | 0,007400             | ------               | ------               | ------              
+100000       | 53165        | ------       | LinkedList   | 0,320300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,597400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,332800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,330700             | ------               | ------               | ------              
+1000000      | 360894       | ------       | LinkedList   | 1,229400             | ------               | ------               | ------              
+1000000      | 117626       | ------       | LinkedList   | 0,423000             | ------               | ------               | ------              
+1000000      | 679468       | ------       | LinkedList   | 2,016900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,923800             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,047900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,352100             | ------               | ------               | ------              
+10000000     | 402994       | ------       | LinkedList   | 1,345800             | ------               | ------               | ------              
+10000000     | 4191773      | ------       | LinkedList   | 12,003000            | ------               | ------               | ------              
+10000000     | 701757       | ------       | LinkedList   | 2,438600             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,733800            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,155300            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,865500            | ------               | ------               | ------              
+1000         | 697          | ------       | LinkedList   | 0,352400             | ------               | ------               | ------              
+1000         | 256          | ------       | LinkedList   | 0,002100             | ------               | ------               | ------              
+1000         | 408          | ------       | LinkedList   | 0,002500             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007300             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,007000             | ------               | ------               | ------              
+10000        | 621          | ------       | LinkedList   | 0,003800             | ------               | ------               | ------              
+10000        | 1322         | ------       | LinkedList   | 0,006000             | ------               | ------               | ------              
+10000        | 8548         | ------       | LinkedList   | 0,035200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,062200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,055000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,041100             | ------               | ------               | ------              
+100000       | 10027        | ------       | LinkedList   | 0,051600             | ------               | ------               | ------              
+100000       | 14221        | ------       | LinkedList   | 0,072400             | ------               | ------               | ------              
+100000       | 37741        | ------       | LinkedList   | 0,190900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,493000             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,321800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,333500             | ------               | ------               | ------              
+1000         | 1            | ------       | LinkedList   | 0,357000             | ------               | ------               | ------              
+1000         | 493          | ------       | LinkedList   | 0,002600             | ------               | ------               | ------              
+1000         | 823          | ------       | LinkedList   | 0,004900             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,004800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,008500             | ------               | ------               | ------              
+10000        | 364          | ------       | LinkedList   | 0,002200             | ------               | ------               | ------              
+10000        | 815          | ------       | LinkedList   | 0,004400             | ------               | ------               | ------              
+10000        | 6131         | ------       | LinkedList   | 0,027500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,044700             | ------               | ------               | ------              
+100000       | 60148        | ------       | LinkedList   | 0,267100             | ------               | ------               | ------              
+100000       | 308          | ------       | LinkedList   | 0,001900             | ------               | ------               | ------              
+100000       | 55170        | ------       | LinkedList   | 0,318800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,293200             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,437900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,294800             | ------               | ------               | ------              
+1000000      | 901575       | ------       | LinkedList   | 2,727600             | ------               | ------               | ------              
+1000000      | 492394       | ------       | LinkedList   | 1,471900             | ------               | ------               | ------              
+1000000      | 817907       | ------       | LinkedList   | 2,522700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,907900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 2,972600             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 3,036600             | ------               | ------               | ------              
+10000000     | 1644986      | ------       | LinkedList   | 6,423300             | ------               | ------               | ------              
+10000000     | 8426019      | ------       | LinkedList   | 23,754600            | ------               | ------               | ------              
+10000000     | 854719       | ------       | LinkedList   | 2,635800             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,767400            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 27,983100            | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 28,133200            | ------               | ------               | ------              
+1000         | 6            | ------       | LinkedList   | 0,932000             | ------               | ------               | ------              
+1000         | 112          | ------       | LinkedList   | 0,004700             | ------               | ------               | ------              
+1000         | 124          | ------       | LinkedList   | 0,007100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,031600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,030600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,024400             | ------               | ------               | ------              
+10000        | 5452         | ------       | LinkedList   | 0,110000             | ------               | ------               | ------              
+10000        | 4504         | ------       | LinkedList   | 0,080800             | ------               | ------               | ------              
+10000        | 6338         | ------       | LinkedList   | 0,118300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,182800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,118300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,188400             | ------               | ------               | ------              
+100000       | 40271        | ------       | LinkedList   | 0,494600             | ------               | ------               | ------              
+100000       | 91285        | ------       | LinkedList   | 1,437100             | ------               | ------               | ------              
+100000       | 96283        | ------       | LinkedList   | 0,980300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 2,654600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,805300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,155600             | ------               | ------               | ------              
+1000000      | 209461       | ------       | LinkedList   | 3,836100             | ------               | ------               | ------              
+1000000      | 523783       | ------       | LinkedList   | 13,758100            | ------               | ------               | ------              
+1000000      | 894784       | ------       | LinkedList   | 16,029100            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 8,637200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 11,869600            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 10,704300            | ------               | ------               | ------              
+10000000     | 5879644      | ------       | LinkedList   | 55,964800            | ------               | ------               | ------              
+10000000     | 3682819      | ------       | LinkedList   | 58,577700            | ------               | ------               | ------              
+10000000     | 185567       | ------       | LinkedList   | 2,573900             | ------               | ------               | ------              
+10000000     | Not found    | ------       | LinkedList   | 99,958000            | ------               | ------               | ------              
+1000         | 367          | ------       | LinkedList   | 3,469900             | ------               | ------               | ------              
+1000         | 43           | ------       | LinkedList   | 0,017400             | ------               | ------               | ------              
+1000         | 168          | ------       | LinkedList   | 0,006100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,017700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,040100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,020500             | ------               | ------               | ------              
+10000        | 1435         | ------       | LinkedList   | 0,027000             | ------               | ------               | ------              
+10000        | 7672         | ------       | LinkedList   | 0,145000             | ------               | ------               | ------              
+10000        | 4456         | ------       | LinkedList   | 0,405000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,228700             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,327400             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,210500             | ------               | ------               | ------              
+100000       | 29939        | ------       | LinkedList   | 0,574800             | ------               | ------               | ------              
+100000       | 55938        | ------       | LinkedList   | 0,992500             | ------               | ------               | ------              
+100000       | 31388        | ------       | LinkedList   | 0,430900             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,551800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,994800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,397900             | ------               | ------               | ------              
+1000000      | 534487       | ------       | LinkedList   | 3,749800             | ------               | ------               | ------              
+1000000      | 811740       | ------       | LinkedList   | 8,117500             | ------               | ------               | ------              
+1000000      | 16890        | ------       | LinkedList   | 0,123000             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 13,591600            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 10,445100            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 9,802800             | ------               | ------               | ------              
+1000         | 146          | ------       | LinkedList   | 1,094300             | ------               | ------               | ------              
+1000         | 435          | ------       | LinkedList   | 0,023300             | ------               | ------               | ------              
+1000         | 357          | ------       | LinkedList   | 0,008400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,021000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,017200             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,015500             | ------               | ------               | ------              
+10000        | 3836         | ------       | LinkedList   | 0,069300             | ------               | ------               | ------              
+10000        | 7132         | ------       | LinkedList   | 0,139400             | ------               | ------               | ------              
+10000        | 3139         | ------       | LinkedList   | 0,114800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,361200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,239300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,227000             | ------               | ------               | ------              
+100000       | 15001        | ------       | LinkedList   | 0,341800             | ------               | ------               | ------              
+100000       | 43094        | ------       | LinkedList   | 1,018500             | ------               | ------               | ------              
+100000       | 18258        | ------       | LinkedList   | 0,539400             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,742700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 2,782600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 0,867600             | ------               | ------               | ------              
+1000000      | 381513       | ------       | LinkedList   | 5,150100             | ------               | ------               | ------              
+1000000      | 931648       | ------       | LinkedList   | 7,541700             | ------               | ------               | ------              
+1000000      | 661603       | ------       | LinkedList   | 4,534900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 10,481700            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 8,272400             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 7,455300             | ------               | ------               | ------              
+1000         | 384          | ------       | LinkedList   | 0,929000             | ------               | ------               | ------              
+1000         | 644          | ------       | LinkedList   | 0,011700             | ------               | ------               | ------              
+1000         | 660          | ------       | LinkedList   | 0,015600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,034700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,029000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,020800             | ------               | ------               | ------              
+10000        | 3326         | ------       | LinkedList   | 0,066800             | ------               | ------               | ------              
+10000        | 3526         | ------       | LinkedList   | 0,098500             | ------               | ------               | ------              
+10000        | 650          | ------       | LinkedList   | 0,018300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 1,352500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,270600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 10,057200            | ------               | ------               | ------              
+100000       | 49456        | ------       | LinkedList   | 1,492700             | ------               | ------               | ------              
+100000       | 99311        | ------       | LinkedList   | 1,621500             | ------               | ------               | ------              
+100000       | 11971        | ------       | LinkedList   | 7,446600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 4,650700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,076300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,396800             | ------               | ------               | ------              
+1000000      | 314751       | ------       | LinkedList   | 4,218000             | ------               | ------               | ------              
+1000000      | 225849       | ------       | LinkedList   | 4,725000             | ------               | ------               | ------              
+1000000      | 219887       | ------       | LinkedList   | 6,011900             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 16,053800            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 18,692000            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 17,268300            | ------               | ------               | ------              
+1000         | 289          | ------       | LinkedList   | 8,474400             | ------               | ------               | ------              
+1000         | 224          | ------       | LinkedList   | 0,010400             | ------               | ------               | ------              
+1000         | 369          | ------       | LinkedList   | 0,025100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,023600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,066600             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,058900             | ------               | ------               | ------              
+10000        | 5571         | ------       | LinkedList   | 0,132200             | ------               | ------               | ------              
+10000        | 5999         | ------       | LinkedList   | 0,123800             | ------               | ------               | ------              
+10000        | 359          | ------       | LinkedList   | 0,009800             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,202500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,322300             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,447600             | ------               | ------               | ------              
+100000       | 75124        | ------       | LinkedList   | 3,082300             | ------               | ------               | ------              
+100000       | 18878        | ------       | LinkedList   | 0,468600             | ------               | ------               | ------              
+100000       | 54444        | ------       | LinkedList   | 2,581000             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,858100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 4,143700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,059100             | ------               | ------               | ------              
+1000000      | 763681       | ------       | LinkedList   | 10,937700            | ------               | ------               | ------              
+1000000      | 611552       | ------       | LinkedList   | 12,272200            | ------               | ------               | ------              
+1000000      | 106524       | ------       | LinkedList   | 1,220700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 21,125100            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 11,745900            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 22,431000            | ------               | ------               | ------              
+1000         | 453          | ------       | LinkedList   | 0,688300             | ------               | ------               | ------              
+1000         | 175          | ------       | LinkedList   | 0,005300             | ------               | ------               | ------              
+1000         | 636          | ------       | LinkedList   | 0,012700             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,032100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,042800             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,021000             | ------               | ------               | ------              
+10000        | 6227         | ------       | LinkedList   | 0,118400             | ------               | ------               | ------              
+10000        | 293          | ------       | LinkedList   | 0,011200             | ------               | ------               | ------              
+10000        | 5083         | ------       | LinkedList   | 0,097500             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,130600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,304600             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,164600             | ------               | ------               | ------              
+100000       | 92413        | ------       | LinkedList   | 1,683800             | ------               | ------               | ------              
+100000       | 7173         | ------       | LinkedList   | 0,089300             | ------               | ------               | ------              
+100000       | 42281        | ------       | LinkedList   | 0,360300             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,182500             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 2,218600             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,296200             | ------               | ------               | ------              
+1000000      | 871949       | ------       | LinkedList   | 9,589700             | ------               | ------               | ------              
+1000000      | 470276       | ------       | LinkedList   | 7,524300             | ------               | ------               | ------              
+1000000      | 706628       | ------       | LinkedList   | 5,620700             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 11,918700            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 14,902400            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 10,172700            | ------               | ------               | ------              
+1000         | 81           | ------       | LinkedList   | 0,759400             | ------               | ------               | ------              
+1000         | 614          | ------       | LinkedList   | 1,257700             | ------               | ------               | ------              
+1000         | 195          | ------       | LinkedList   | 0,005100             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,076000             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,020400             | ------               | ------               | ------              
+1000         | Not found    | ------       | LinkedList   | 0,090100             | ------               | ------               | ------              
+10000        | 5687         | ------       | LinkedList   | 0,213600             | ------               | ------               | ------              
+10000        | 5668         | ------       | LinkedList   | 0,278800             | ------               | ------               | ------              
+10000        | 1693         | ------       | LinkedList   | 0,076200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,299000             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 0,327200             | ------               | ------               | ------              
+10000        | Not found    | ------       | LinkedList   | 2,387400             | ------               | ------               | ------              
+100000       | 46721        | ------       | LinkedList   | 1,283900             | ------               | ------               | ------              
+100000       | 27913        | ------       | LinkedList   | 0,572600             | ------               | ------               | ------              
+100000       | 3171         | ------       | LinkedList   | 0,054800             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 2,068700             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 2,602100             | ------               | ------               | ------              
+100000       | Not found    | ------       | LinkedList   | 1,851000             | ------               | ------               | ------              
+1000000      | 71366        | ------       | LinkedList   | 1,586000             | ------               | ------               | ------              
+1000000      | 865680       | ------       | LinkedList   | 17,981200            | ------               | ------               | ------              
+1000000      | 141320       | ------       | LinkedList   | 1,419200             | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 27,193500            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 23,855400            | ------               | ------               | ------              
+1000000      | Not found    | ------       | LinkedList   | 15,748100            | ------               | ------               | ------              
