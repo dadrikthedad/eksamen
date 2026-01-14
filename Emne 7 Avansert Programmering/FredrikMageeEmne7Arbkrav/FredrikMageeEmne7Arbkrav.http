@@ -1,0 +1,315 @@
+###########################################################
+# Http Tester for alle endepunkter for mappeinnlevering 1
+###########################################################
+@baseUrl = http://localhost:5031
+
+# For å enkelt teste endepunktene endre denne variabelen til ønsket Id. Husk at hvis denne ID-en er slettet
+# så vil ikke PUT og DELETE-testene fungere på denne ID-en. 28 er ikke opprettet enda. Kjør POSt-endepunktet 
+# for å opprette den
+@bookId = 28
+
+###########################################################
+# GET ALL BOOKS - Suksess med 200 Ok
+###########################################################
+
+### Hent alle bøker
+GET {{baseUrl}}/api/books
+
+### Hent alle bøker filtrert på tittel
+GET {{baseUrl}}/api/books?title=Den
+
+### Hent alle bøker filtrert på forfatter
+GET {{baseUrl}}/api/books?author=Amsun
+
+### Hent alle bøker filtrert på utgivelsesår
+GET {{baseUrl}}/api/books?year=2024
+
+### Hent alle bøker filtrert på ISBN
+GET {{baseUrl}}/api/books?isbn=BOK
+
+### Hent alle bøker filtrert på lagerbeholdning
+GET {{baseUrl}}/api/books?inStock=4
+
+### Hent alle bøker med flere filtreringer
+GET {{baseUrl}}/api/books?title=E&author=T&year=2024
+
+### Hent en tom liste da vi har filtrert bort alle bøker
+GET {{baseUrl}}/api/books?title=Aa
+
+###########################################################
+# GET ALL BOOKS - Feil
+###########################################################
+
+### Utgivelsesår filtreres på string istedenfor tall  - 400 BaadRequest
+GET {{baseUrl}}/api/books?year=Test
+
+### InStock filtreres på string istedenfor tall  - 400 BaadRequest
+GET {{baseUrl}}/api/books?inStock=4
+
+
+###########################################################
+# GET ALL BOOKS IN STOCK - Suksess med 200 Ok
+###########################################################
+
+### Hent alle bøker med lagerbeholdning høyere enn 0
+GET {{baseUrl}}/api/books/instock
+
+###########################################################
+# GET BOOK BY ID - Suksess med 200 Ok
+###########################################################
+
+### Hent bok med Id 1
+GET {{baseUrl}}/api/books/1
+
+### Hent bok med Id 11
+GET {{baseUrl}}/api/books/11
+
+###########################################################
+# GET BOOK BY ID - Feil
+###########################################################
+
+### BookId er 0 - 400 Bad Request
+GET {{baseUrl}}/api/books/0
+
+### BookId er string - 400 Bad Request
+GET {{baseUrl}}/api/books/test
+
+### BookId eksisterer ikke - 404 Not Found
+GET {{baseUrl}}/api/books/3000
+
+
+###########################################################
+# CREATE BOOK - Suksess med 201 Created
+###########################################################
+
+### Opprett en bok
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "Test Forfatter",
+  "publicationYear": 2023,
+  "isbn": "TESTBOK8372",
+  "inStock": 1
+}
+
+
+##################################################
+# CREATE BOOK - Feil
+##################################################
+
+### Mangler et felt (title) ved opprettelse - 400 Bad Request
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "author": "Test Forfatter",
+  "publicationYear": 2023,
+  "isbn": "TESTBOK8372",
+  "inStock": 1
+}
+
+### Tomt felt (title) - 400 Bad Request
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "",
+  "author": "Test Forfatter",
+  "publicationYear": 2023,
+  "isbn": "TESTBOK8372",
+  "inStock": 1
+}
+
+### Utigvelses år er høyere enn 2030 - 400 Bad Request
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "TestForfatter",
+  "publicationYear": 2031,
+  "isbn": "TESTBOK8372",
+  "inStock": 1
+}
+
+### Utigvelses år er et negativt tall - 400 Bad Request
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "TestForfatter",
+  "publicationYear": -10,
+  "isbn": "TESTBOK8372",
+  "inStock": 1
+}
+
+### ISBN er for langt - 400 Bad Request
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "TestForfatter",
+  "publicationYear": 3,
+  "isbn": "TESTBOK123456789011121314151617181920",
+  "inStock": 1
+}
+
+### ISBN eksisterer allerede (Krever at bok med ID 20 ikke er slettet) - 409 Conflict
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "TestForfatter",
+  "publicationYear": 3,
+  "isbn": "KORTBOK24",
+  "inStock": 1
+}
+
+
+###########################################################
+# UPDATE BOOK - Suksess med 204 NoContent
+###########################################################
+
+# Bruk denne for å enkelt sjekke at endepunktet fungerer på boken spesifisert med variabelen bookId
+GET {{baseUrl}}/api/books/{{bookId}}
+
+### Oppdater en bok - Oppdaterer kun tittel
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "title": "Kun Tittel Blir Oppdatert"
+}
+
+
+### Oppdater en bok - Oppdaterer kun forfatter
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "author": "Kun Forfatter Oppdatert"
+}
+
+
+### Oppdater en bok - Oppdaterer kun ISBN
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "isbn": "NYISBNYEPP"
+}
+
+
+### Oppdater en bok - Oppdaterer kun lagerbeholdning
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "inStock": -5
+}
+
+
+### Oppdater en bok - Oppdaterer kun utgivelsesår
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "publicationYear": 123
+}
+
+
+### Oppdater en bok - Oppdaterer kun et felt (inStock), men alle felt er med
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "title": "Test Tittel",
+  "author": "Test Forfatter",
+  "publicationYear": 2023,
+  "isbn": "TESTBOK8372",
+  "inStock": 19
+}
+
+### Oppdater en bok - Oppdaterer alle felt
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "title": "Ny Tittel",
+  "author": "Ny Forfatter",
+  "publicationYear": 1900,
+  "isbn": "NYISBN1900",
+  "inStock": 205
+}
+
+
+###########################################################
+# UPDATE BOOK - Feil
+###########################################################
+
+### Ingen felter å oppdatere - 400 Bad Request
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+}
+
+### Bok med bokId eksisterer ikke - 404 Not Found
+PUT {{baseUrl}}/api/books/3000
+Content-Type: application/json
+
+{
+  "title": "Ny Tittel"
+}
+
+### ISBN eksisterer allerede - 409 Conflict
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "isbn": "KORTBOK24"
+}
+
+### ISBN høyere enn 25 tegn - 400 Bad Request
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "isbn": "TESTBOK123456789011121314151617181920"
+}
+
+### Utgivelsesår er høyere enn 2030 - 400 Bad Request
+PUT {{baseUrl}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "publicationYear": 2031
+}
+
+###########################################################
+# DELETE BOOK - Suksess med 204 NoContent
+###########################################################
+
+# Bruk denne for å enkelt sjekke at boken eksisterer eller er slettet
+GET {{baseUrl}}/api/books/{{bookId}}
+
+### Slett en bok
+DELETE {{baseUrl}}/api/books/{{bookId}}
+
+###########################################################
+# DELETE BOOK - Feil
+###########################################################
+
+### BookId er 0 - 400 Bad Request
+DELETE {{baseUrl}}/api/books/0
+
+### BookId er string - 400 Bad Request
+DELETE {{baseUrl}}/api/books/test
+
+### BookId eksisterer ikke - 404 Not Found
+DELETE {{baseUrl}}/api/books/3000

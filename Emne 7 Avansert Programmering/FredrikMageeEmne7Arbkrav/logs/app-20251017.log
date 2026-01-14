@@ -1,0 +1,1037 @@
+2025-10-17 00:00:08.414 +02:00 [INF] Application is shutting down...
+2025-10-17 00:00:12.370 +02:00 [INF] Now listening on: http://localhost:5031
+2025-10-17 00:00:12.389 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 00:00:12.389 +02:00 [INF] Hosting environment: Development
+2025-10-17 00:00:12.390 +02:00 [INF] Content root path: C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav
+2025-10-17 00:00:15.595 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 102
+2025-10-17 00:00:15.611 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:15.626 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:15.719 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"string","PublicationYear":2025,"ISBN":"string","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:00:16.041 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:16.079 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:00:16.082 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 453.0011ms
+2025-10-17 00:00:16.083 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:16.084 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 473.4910 ms
+2025-10-17 00:00:16.090 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 495.8217ms
+2025-10-17 00:00:24.666 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 105
+2025-10-17 00:00:24.668 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:24.669 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:24.675 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"Yes","Author":"string","PublicationYear":2025,"ISBN":"string","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:00:24.687 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:24.711 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Books" SET "Title" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2025-10-17 00:00:24.718 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:00:24.719 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 48.6588ms
+2025-10-17 00:00:24.719 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:24.720 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 51.6298 ms
+2025-10-17 00:00:24.721 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 55.2278ms
+2025-10-17 00:00:27.984 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books/2 - null null
+2025-10-17 00:00:27.988 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:27.991 +02:00 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:27.995 +02:00 [INF] GetBookById called with id 2
+2025-10-17 00:00:28.030 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:28.031 +02:00 [INF] Book 2, Yes retrieved successfully
+2025-10-17 00:00:28.034 +02:00 [INF] Executing OkObjectResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:00:28.044 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav) in 51.6242ms
+2025-10-17 00:00:28.045 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:28.045 +02:00 [INF] HTTP GET /api/Books/2 responded 200 in 56.7913 ms
+2025-10-17 00:00:28.046 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books/2 - 200 null application/json; charset=utf-8 61.8771ms
+2025-10-17 00:00:32.173 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 102
+2025-10-17 00:00:32.174 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:32.175 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:32.176 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"string","PublicationYear":2025,"ISBN":"string","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:00:32.179 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:32.180 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:00:32.181 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 5.1379ms
+2025-10-17 00:00:32.181 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:32.182 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 7.7470 ms
+2025-10-17 00:00:32.183 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 10.3798ms
+2025-10-17 00:00:37.903 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books/2 - null null
+2025-10-17 00:00:37.904 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:37.905 +02:00 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:37.906 +02:00 [INF] GetBookById called with id 2
+2025-10-17 00:00:37.907 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:37.908 +02:00 [INF] Book 2, Yes retrieved successfully
+2025-10-17 00:00:37.909 +02:00 [INF] Executing OkObjectResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:00:37.910 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav) in 4.3163ms
+2025-10-17 00:00:37.911 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:37.911 +02:00 [INF] HTTP GET /api/Books/2 responded 200 in 7.1747 ms
+2025-10-17 00:00:37.912 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books/2 - 200 null application/json; charset=utf-8 9.7899ms
+2025-10-17 00:00:56.884 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 96
+2025-10-17 00:00:56.885 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:56.886 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:00:56.887 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"","PublicationYear":2025,"ISBN":"string","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:00:56.891 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:00:56.892 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:00:56.892 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 5.3936ms
+2025-10-17 00:00:56.893 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:00:56.894 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 8.1917 ms
+2025-10-17 00:00:56.895 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 10.7391ms
+2025-10-17 00:01:01.937 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 92
+2025-10-17 00:01:01.938 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:01.939 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:01.943 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:01:01.958 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 18.3779ms
+2025-10-17 00:01:01.959 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:01.960 +02:00 [INF] HTTP PUT /api/Books/2 responded 400 in 21.5289 ms
+2025-10-17 00:01:01.960 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 400 null application/problem+json; charset=utf-8 23.929ms
+2025-10-17 00:01:07.144 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 94
+2025-10-17 00:01:07.146 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:07.147 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:07.148 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:01:07.149 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 1.7945ms
+2025-10-17 00:01:07.150 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:07.151 +02:00 [INF] HTTP PUT /api/Books/2 responded 400 in 5.1557 ms
+2025-10-17 00:01:07.152 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 400 null application/problem+json; charset=utf-8 8.0421ms
+2025-10-17 00:01:10.868 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 69
+2025-10-17 00:01:10.870 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:10.870 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:10.872 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"","PublicationYear":null,"ISBN":"string","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:01:10.875 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:01:10.876 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:01:10.877 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 5.2781ms
+2025-10-17 00:01:10.877 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:10.878 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 8.1211 ms
+2025-10-17 00:01:10.879 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 10.8069ms
+2025-10-17 00:01:17.294 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books/2 - null null
+2025-10-17 00:01:17.295 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:17.296 +02:00 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:17.297 +02:00 [INF] GetBookById called with id 2
+2025-10-17 00:01:17.298 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:01:17.300 +02:00 [INF] Book 2, Yes retrieved successfully
+2025-10-17 00:01:17.300 +02:00 [INF] Executing OkObjectResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:01:17.301 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav) in 4.125ms
+2025-10-17 00:01:17.302 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:17.302 +02:00 [INF] HTTP GET /api/Books/2 responded 200 in 7.0271 ms
+2025-10-17 00:01:17.303 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books/2 - 200 null application/json; charset=utf-8 9.2803ms
+2025-10-17 00:01:28.312 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 75
+2025-10-17 00:01:28.313 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:28.314 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:28.315 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"","PublicationYear":null,"ISBN":"BESTEBOK9821","InStock":0,"$type":"UpdateBookRequest"}
+2025-10-17 00:01:28.318 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:01:28.325 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Books" SET "ISBN" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2025-10-17 00:01:28.329 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:01:28.329 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 14.4999ms
+2025-10-17 00:01:28.330 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:28.330 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 17.3778 ms
+2025-10-17 00:01:28.331 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 19.789ms
+2025-10-17 00:01:38.651 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 111
+2025-10-17 00:01:38.652 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:38.653 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:38.655 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:01:38.655 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 1.3735ms
+2025-10-17 00:01:38.656 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:38.657 +02:00 [INF] HTTP PUT /api/Books/2 responded 400 in 4.8151 ms
+2025-10-17 00:01:38.658 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 400 null application/problem+json; charset=utf-8 7.0671ms
+2025-10-17 00:01:48.421 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 114
+2025-10-17 00:01:48.422 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:48.423 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:48.425 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:01:48.426 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 1.9554ms
+2025-10-17 00:01:48.427 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:48.427 +02:00 [INF] HTTP PUT /api/Books/2 responded 400 in 4.6856 ms
+2025-10-17 00:01:48.428 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 400 null application/problem+json; charset=utf-8 6.814ms
+2025-10-17 00:01:54.171 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 112
+2025-10-17 00:01:54.172 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:54.172 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:54.174 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:01:54.174 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 1.2648ms
+2025-10-17 00:01:54.175 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:54.176 +02:00 [INF] HTTP PUT /api/Books/2 responded 400 in 3.9842 ms
+2025-10-17 00:01:54.177 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 400 null application/problem+json; charset=utf-8 6.0998ms
+2025-10-17 00:01:57.386 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5031/api/Books/2 - application/json 80
+2025-10-17 00:01:57.387 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:57.388 +02:00 [INF] Route matched with {action = "UpdateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBook(Int32, FredrikMageeEmne7Arbkrav.DTOs.UpdateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:01:57.389 +02:00 [INF] UpdateBook called with UpdateBookRequest {"Title":"","Author":"","PublicationYear":null,"ISBN":"BESTEBOK9821BEST","InStock":11,"$type":"UpdateBookRequest"}
+2025-10-17 00:01:57.392 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:01:57.394 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 16), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Books" SET "ISBN" = @p0, "InStock" = @p1
+WHERE "Id" = @p2
+RETURNING 1;
+2025-10-17 00:01:57.396 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:01:57.397 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav) in 7.6879ms
+2025-10-17 00:01:57.397 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.UpdateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:01:57.398 +02:00 [INF] HTTP PUT /api/Books/2 responded 204 in 10.6894 ms
+2025-10-17 00:01:57.399 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5031/api/Books/2 - 204 null null 12.9511ms
+2025-10-17 00:02:04.706 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books/2 - null null
+2025-10-17 00:02:04.707 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:04.708 +02:00 [INF] Route matched with {action = "GetBookById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookById(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:02:04.709 +02:00 [INF] GetBookById called with id 2
+2025-10-17 00:02:04.710 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:02:04.711 +02:00 [INF] Book 2, Yes retrieved successfully
+2025-10-17 00:02:04.712 +02:00 [INF] Executing OkObjectResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:02:04.713 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav) in 4.0863ms
+2025-10-17 00:02:04.713 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBookById (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:04.714 +02:00 [INF] HTTP GET /api/Books/2 responded 200 in 6.8857 ms
+2025-10-17 00:02:04.715 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books/2 - 200 null application/json; charset=utf-8 9.2311ms
+2025-10-17 00:02:22.827 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5031/api/Books/10 - null null
+2025-10-17 00:02:22.828 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:22.831 +02:00 [INF] Route matched with {action = "DeleteBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteBook(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:02:22.832 +02:00 [INF] DeleteBook called with 10
+2025-10-17 00:02:22.833 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:02:22.835 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav) in 3.4275ms
+2025-10-17 00:02:22.836 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:22.836 +02:00 [ERR] HTTP DELETE /api/Books/10 responded 500 in 8.0780 ms
+System.Collections.Generic.KeyNotFoundException: Book with Id 10 not found
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.DeleteBookAsync(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 150
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 113
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-10-17 00:02:22.858 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Book with Id 10 not found
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.DeleteBookAsync(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 150
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 113
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-17 00:02:22.863 +02:00 [ERR] Unhandled exception: Book with Id 10 not found
+System.Collections.Generic.KeyNotFoundException: Book with Id 10 not found
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.DeleteBookAsync(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 150
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook(Int32 bookId) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 113
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-17 00:02:22.870 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5031/api/Books/10 - 404 null application/json; charset=utf-8 43.1177ms
+2025-10-17 00:02:27.628 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5031/api/Books/2 - null null
+2025-10-17 00:02:27.629 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:27.630 +02:00 [INF] Route matched with {action = "DeleteBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteBook(Int32) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:02:27.631 +02:00 [INF] DeleteBook called with 2
+2025-10-17 00:02:27.632 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."Id" = @__p_0
+LIMIT 1
+2025-10-17 00:02:27.639 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Books"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-17 00:02:27.643 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-17 00:02:27.643 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav) in 12.8298ms
+2025-10-17 00:02:27.644 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.DeleteBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:27.645 +02:00 [INF] HTTP DELETE /api/Books/2 responded 204 in 15.6435 ms
+2025-10-17 00:02:27.646 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5031/api/Books/2 - 204 null null 17.8721ms
+2025-10-17 00:02:40.120 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books - null null
+2025-10-17 00:02:40.121 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:40.123 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:02:40.133 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+2025-10-17 00:02:40.134 +02:00 [INF] We retrieved 3 books from the database successfully
+2025-10-17 00:02:40.135 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:02:40.137 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 12.2883ms
+2025-10-17 00:02:40.137 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:02:40.138 +02:00 [INF] HTTP GET /api/Books responded 200 in 16.6633 ms
+2025-10-17 00:02:40.139 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books - 200 null application/json; charset=utf-8 19.0194ms
+2025-10-17 00:03:02.234 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 148
+2025-10-17 00:03:02.235 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:02.238 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:02.241 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:02.242 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 2.7201ms
+2025-10-17 00:03:02.243 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:02.243 +02:00 [INF] HTTP POST /api/Books responded 400 in 8.2183 ms
+2025-10-17 00:03:02.244 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 10.4136ms
+2025-10-17 00:03:09.068 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 138
+2025-10-17 00:03:09.069 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:09.070 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:09.071 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:09.072 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 1.308ms
+2025-10-17 00:03:09.073 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:09.073 +02:00 [INF] HTTP POST /api/Books responded 400 in 4.2098 ms
+2025-10-17 00:03:09.074 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 6.5102ms
+2025-10-17 00:03:17.859 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 136
+2025-10-17 00:03:17.860 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:17.861 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:17.862 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:17.863 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 1.2089ms
+2025-10-17 00:03:17.863 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:17.864 +02:00 [INF] HTTP POST /api/Books responded 400 in 3.7459 ms
+2025-10-17 00:03:17.865 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 5.785ms
+2025-10-17 00:03:30.989 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 150
+2025-10-17 00:03:30.990 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:30.991 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:30.993 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:30.993 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 1.3424ms
+2025-10-17 00:03:30.994 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:30.995 +02:00 [INF] HTTP POST /api/Books responded 400 in 4.3406 ms
+2025-10-17 00:03:30.996 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 6.6113ms
+2025-10-17 00:03:40.810 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 149
+2025-10-17 00:03:40.812 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:40.812 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:40.814 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:40.814 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 1.269ms
+2025-10-17 00:03:40.815 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:40.816 +02:00 [INF] HTTP POST /api/Books responded 400 in 3.9330 ms
+2025-10-17 00:03:40.816 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 6.1853ms
+2025-10-17 00:03:53.456 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 133
+2025-10-17 00:03:53.457 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:53.458 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:03:53.459 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-17 00:03:53.460 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 1.1927ms
+2025-10-17 00:03:53.460 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:03:53.461 +02:00 [INF] HTTP POST /api/Books responded 400 in 3.8445 ms
+2025-10-17 00:03:53.462 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 400 null application/problem+json; charset=utf-8 5.9315ms
+2025-10-17 00:04:01.694 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 132
+2025-10-17 00:04:01.696 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:01.696 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:01.699 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Gjengangere","Author":"Henrik Ibsen","PublicationYear":1881,"ISBN":"ISBN006","InStock":9,"$type":"CreateBookRequest"}
+2025-10-17 00:04:01.719 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 7), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:04:01.727 +02:00 [INF] Book created successfully with ID 5
+2025-10-17 00:04:01.728 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:04:01.736 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 38.7665ms
+2025-10-17 00:04:01.737 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:01.738 +02:00 [INF] HTTP POST /api/Books responded 201 in 41.9301 ms
+2025-10-17 00:04:01.739 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 44.3901ms
+2025-10-17 00:04:10.817 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books - null null
+2025-10-17 00:04:10.818 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:10.819 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:10.821 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+2025-10-17 00:04:10.822 +02:00 [INF] We retrieved 4 books from the database successfully
+2025-10-17 00:04:10.822 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:04:10.823 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.1511ms
+2025-10-17 00:04:10.824 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:10.824 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.8843 ms
+2025-10-17 00:04:10.825 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books - 200 null application/json; charset=utf-8 7.9515ms
+2025-10-17 00:04:29.835 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 150
+2025-10-17 00:04:29.837 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:29.837 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:29.839 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Kristin Lavransdatter","Author":"Sigrid Undset","PublicationYear":1920,"ISBN":"ISBISN9321","InStock":10,"$type":"CreateBookRequest"}
+2025-10-17 00:04:29.842 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 10), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:04:29.845 +02:00 [INF] Book created successfully with ID 6
+2025-10-17 00:04:29.845 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:04:29.846 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 7.9064ms
+2025-10-17 00:04:29.847 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:29.848 +02:00 [INF] HTTP POST /api/Books responded 201 in 10.7069 ms
+2025-10-17 00:04:29.848 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 13.1154ms
+2025-10-17 00:04:38.806 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 141
+2025-10-17 00:04:38.808 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:38.808 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:38.810 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Markens grøde","Author":"Knut Hamsun","PublicationYear":1917,"ISBN":"BISNIS2931","InStock":7,"$type":"CreateBookRequest"}
+2025-10-17 00:04:38.813 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 10), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:04:38.814 +02:00 [INF] Book created successfully with ID 7
+2025-10-17 00:04:38.815 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:04:38.816 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.2563ms
+2025-10-17 00:04:38.816 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:38.817 +02:00 [INF] HTTP POST /api/Books responded 201 in 8.9100 ms
+2025-10-17 00:04:38.818 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.22ms
+2025-10-17 00:04:45.254 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 137
+2025-10-17 00:04:45.255 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:45.256 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:45.257 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Sulten","Author":"Knut Hamster","PublicationYear":1890,"ISBN":"ISBNENOKEI1232","InStock":-2,"$type":"CreateBookRequest"}
+2025-10-17 00:04:45.260 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 14), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:04:45.262 +02:00 [INF] Book created successfully with ID 8
+2025-10-17 00:04:45.263 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:04:45.263 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.7079ms
+2025-10-17 00:04:45.264 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:45.265 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.4810 ms
+2025-10-17 00:04:45.266 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.6468ms
+2025-10-17 00:04:55.545 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 136
+2025-10-17 00:04:55.547 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:55.547 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:04:55.549 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Peter Pan","Author":"Knut Hamsun","PublicationYear":1900,"ISBN":"FØRISBN0001","InStock":-10,"$type":"CreateBookRequest"}
+2025-10-17 00:04:55.552 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:04:55.553 +02:00 [INF] Book created successfully with ID 9
+2025-10-17 00:04:55.554 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:04:55.555 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.1938ms
+2025-10-17 00:04:55.555 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:04:55.556 +02:00 [INF] HTTP POST /api/Books responded 201 in 8.9445 ms
+2025-10-17 00:04:55.557 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.0881ms
+2025-10-17 00:05:06.407 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 137
+2025-10-17 00:05:06.409 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:06.409 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:06.411 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Albertine","Author":"Christian Krohg","PublicationYear":1886,"ISBN":"EIKETRE9872","InStock":4,"$type":"CreateBookRequest"}
+2025-10-17 00:05:06.413 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 15), @p1='?' (Size = 11), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:06.416 +02:00 [INF] Book created successfully with ID 10
+2025-10-17 00:05:06.416 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:06.417 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.7371ms
+2025-10-17 00:05:06.418 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:06.418 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.4523 ms
+2025-10-17 00:05:06.419 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.598ms
+2025-10-17 00:05:13.747 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 131
+2025-10-17 00:05:13.748 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:13.749 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:13.750 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Gjengangere","Author":"Henrik Ibsen","PublicationYear":1881,"ISBN":"ISBN006","InStock":9,"$type":"CreateBookRequest"}
+2025-10-17 00:05:13.755 +02:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 7), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:13.761 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FredrikMageeEmne7Arbkrav.Data.BookDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Books.ISBN'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Books.ISBN'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-17 00:05:13.765 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 14.9191ms
+2025-10-17 00:05:13.765 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:13.766 +02:00 [ERR] HTTP POST /api/Books responded 500 in 17.6452 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Books.ISBN'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FredrikMageeEmne7Arbkrav.Repositories.BookRepository.CreateBookAsync(Book book) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Repositories\BookRepository.cs:line 78
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.CreateBookAsync(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 74
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-10-17 00:05:13.772 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Books.ISBN'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FredrikMageeEmne7Arbkrav.Repositories.BookRepository.CreateBookAsync(Book book) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Repositories\BookRepository.cs:line 78
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.CreateBookAsync(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 74
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-17 00:05:13.777 +02:00 [ERR] Unhandled exception: An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: Books.ISBN'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FredrikMageeEmne7Arbkrav.Repositories.BookRepository.CreateBookAsync(Book book) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Repositories\BookRepository.cs:line 78
+   at FredrikMageeEmne7Arbkrav.Services.BooksService.CreateBookAsync(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Services\BooksService.cs:line 74
+   at FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook(CreateBookRequest request) in C:\Users\fredr\Skole\Skoleprosjekt\FredrikMageeEmne7Arbkrav\FredrikMageeEmne7Arbkrav\Controllers\BooksController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-17 00:05:13.783 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 409 null application/json; charset=utf-8 35.8087ms
+2025-10-17 00:05:25.102 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 134
+2025-10-17 00:05:25.103 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:25.104 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:25.105 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Et dukkehjem","Author":"Henrik Ibsen","PublicationYear":1879,"ISBN":"EAE87827","InStock":2,"$type":"CreateBookRequest"}
+2025-10-17 00:05:25.108 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 8), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:25.109 +02:00 [INF] Book created successfully with ID 11
+2025-10-17 00:05:25.110 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:25.111 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.1458ms
+2025-10-17 00:05:25.111 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:25.112 +02:00 [INF] HTTP POST /api/Books responded 201 in 8.7357 ms
+2025-10-17 00:05:25.113 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 10.9692ms
+2025-10-17 00:05:32.881 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 155
+2025-10-17 00:05:32.882 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:32.882 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:32.884 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Peer Grynt","Author":"Henrik Ribsbusk og andre buskevesker","PublicationYear":1867,"ISBN":"PGHB310","InStock":0,"$type":"CreateBookRequest"}
+2025-10-17 00:05:32.886 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 7), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:32.888 +02:00 [INF] Book created successfully with ID 12
+2025-10-17 00:05:32.889 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:32.890 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.3713ms
+2025-10-17 00:05:32.890 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:32.891 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.0681 ms
+2025-10-17 00:05:32.892 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.3929ms
+2025-10-17 00:05:40.287 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 146
+2025-10-17 00:05:40.289 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:40.290 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:40.291 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Vildanden","Author":"Henrik Ibsen","PublicationYear":1884,"ISBN":"Iuo83i1SI","InStock":5,"$type":"CreateBookRequest"}
+2025-10-17 00:05:40.295 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:40.297 +02:00 [INF] Book created successfully with ID 13
+2025-10-17 00:05:40.298 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:40.299 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 8.0928ms
+2025-10-17 00:05:40.300 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:40.300 +02:00 [INF] HTTP POST /api/Books responded 201 in 11.3516 ms
+2025-10-17 00:05:40.301 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 13.7727ms
+2025-10-17 00:05:51.143 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 132
+2025-10-17 00:05:51.145 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:51.145 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:51.147 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Fuglane","Author":"Tarjei Vesaas","PublicationYear":1957,"ISBN":"NI8908SD8","InStock":25,"$type":"CreateBookRequest"}
+2025-10-17 00:05:51.149 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:51.151 +02:00 [INF] Book created successfully with ID 14
+2025-10-17 00:05:51.152 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:51.153 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.3563ms
+2025-10-17 00:05:51.153 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:51.154 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.2162 ms
+2025-10-17 00:05:51.155 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.79ms
+2025-10-17 00:05:59.075 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 136
+2025-10-17 00:05:59.076 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:59.077 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:05:59.078 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Naiv. Super.","Author":"Erlend Loe","PublicationYear":1996,"ISBN":"NBJIK7671","InStock":3560,"$type":"CreateBookRequest"}
+2025-10-17 00:05:59.081 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:05:59.083 +02:00 [INF] Book created successfully with ID 15
+2025-10-17 00:05:59.084 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:05:59.085 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.791ms
+2025-10-17 00:05:59.085 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:05:59.086 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.3291 ms
+2025-10-17 00:05:59.087 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.5969ms
+2025-10-17 00:06:07.057 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 140
+2025-10-17 00:06:07.059 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:07.060 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:07.061 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Skråpånatta","Author":"Lars Mytting","PublicationYear":2021,"ISBN":"KNJKHBG8329173","InStock":7,"$type":"CreateBookRequest"}
+2025-10-17 00:06:07.064 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 14), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:06:07.066 +02:00 [INF] Book created successfully with ID 16
+2025-10-17 00:06:07.067 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:06:07.067 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 7.0573ms
+2025-10-17 00:06:07.068 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:07.069 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.5656 ms
+2025-10-17 00:06:07.069 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.8352ms
+2025-10-17 00:06:14.687 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 155
+2025-10-17 00:06:14.688 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:14.689 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:14.690 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Kristin Lavransdatter: Korset","Author":"Sigrid Undset","PublicationYear":1900,"ISBN":"GIR8793421","InStock":99,"$type":"CreateBookRequest"}
+2025-10-17 00:06:14.692 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 10), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 29)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:06:14.695 +02:00 [INF] Book created successfully with ID 17
+2025-10-17 00:06:14.696 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:06:14.697 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 7.1643ms
+2025-10-17 00:06:14.697 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:14.698 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.8402 ms
+2025-10-17 00:06:14.699 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.9528ms
+2025-10-17 00:06:24.850 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 131
+2025-10-17 00:06:24.851 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:24.852 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:24.853 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"Jazz","Author":"Jassi Jazzhands","PublicationYear":1999,"ISBN":"JAZZ1999","InStock":0,"$type":"CreateBookRequest"}
+2025-10-17 00:06:24.856 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 15), @p1='?' (Size = 8), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:06:24.859 +02:00 [INF] Book created successfully with ID 18
+2025-10-17 00:06:24.860 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:06:24.860 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 7.4783ms
+2025-10-17 00:06:24.861 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:24.862 +02:00 [INF] HTTP POST /api/Books responded 201 in 10.1846 ms
+2025-10-17 00:06:24.863 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 12.4923ms
+2025-10-17 00:06:32.564 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 143
+2025-10-17 00:06:32.565 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:32.565 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:32.566 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"På Blåbær Tur","Author":"Ragnar Calbru","PublicationYear":2017,"ISBN":"BLABAR321","InStock":88,"$type":"CreateBookRequest"}
+2025-10-17 00:06:32.569 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:06:32.571 +02:00 [INF] Book created successfully with ID 19
+2025-10-17 00:06:32.572 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:06:32.573 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 6.5835ms
+2025-10-17 00:06:32.573 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:32.574 +02:00 [INF] HTTP POST /api/Books responded 201 in 9.3459 ms
+2025-10-17 00:06:32.575 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 11.5056ms
+2025-10-17 00:06:41.188 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Books - application/json 146
+2025-10-17 00:06:41.190 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:41.191 +02:00 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBook(FredrikMageeEmne7Arbkrav.DTOs.CreateBookRequest) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:41.192 +02:00 [INF] CreateBook called with UpdateBookRequest {"Title":"En kortere bok","Author":"Erik Ikke-Forfatteren","PublicationYear":2024,"ISBN":"KORTBOK24","InStock":3,"$type":"CreateBookRequest"}
+2025-10-17 00:06:41.196 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Author", "ISBN", "InStock", "PublicationYear", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-10-17 00:06:41.199 +02:00 [INF] Book created successfully with ID 20
+2025-10-17 00:06:41.200 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse'.
+2025-10-17 00:06:41.201 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav) in 8.7715ms
+2025-10-17 00:06:41.201 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.CreateBook (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:41.202 +02:00 [INF] HTTP POST /api/Books responded 201 in 11.7998 ms
+2025-10-17 00:06:41.203 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Books - 201 null application/json; charset=utf-8 14.5616ms
+2025-10-17 00:06:45.125 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books - null null
+2025-10-17 00:06:45.126 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:45.127 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:45.129 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+2025-10-17 00:06:45.130 +02:00 [INF] We retrieved 19 books from the database successfully
+2025-10-17 00:06:45.131 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:06:45.131 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.2665ms
+2025-10-17 00:06:45.132 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:45.132 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.9877 ms
+2025-10-17 00:06:45.133 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books - 200 null application/json; charset=utf-8 8.0447ms
+2025-10-17 00:06:50.497 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=1 - null null
+2025-10-17 00:06:50.498 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:50.498 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:50.518 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 1)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0
+2025-10-17 00:06:50.519 +02:00 [INF] We retrieved 14 books from the database successfully
+2025-10-17 00:06:50.520 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:06:50.521 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 21.7542ms
+2025-10-17 00:06:50.522 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:50.522 +02:00 [INF] HTTP GET /api/Books responded 200 in 24.3223 ms
+2025-10-17 00:06:50.523 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=1 - 200 null application/json; charset=utf-8 26.4694ms
+2025-10-17 00:06:53.586 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=12 - null null
+2025-10-17 00:06:53.588 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:53.588 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:53.590 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0
+2025-10-17 00:06:53.591 +02:00 [INF] We retrieved 3 books from the database successfully
+2025-10-17 00:06:53.592 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:06:53.592 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.4906ms
+2025-10-17 00:06:53.593 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:53.594 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.0621 ms
+2025-10-17 00:06:53.595 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=12 - 200 null application/json; charset=utf-8 8.2982ms
+2025-10-17 00:06:59.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=12&inStock=8 - null null
+2025-10-17 00:06:59.101 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:59.102 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:06:59.108 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 2), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:06:59.109 +02:00 [INF] We retrieved 2 books from the database successfully
+2025-10-17 00:06:59.110 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:06:59.110 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 7.8017ms
+2025-10-17 00:06:59.111 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:06:59.112 +02:00 [INF] HTTP GET /api/Books responded 200 in 10.6082 ms
+2025-10-17 00:06:59.112 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=12&inStock=8 - 200 null application/json; charset=utf-8 12.7142ms
+2025-10-17 00:07:11.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=bok&inStock=8 - null null
+2025-10-17 00:07:11.141 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:11.141 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:11.143 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 3), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:07:11.144 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:11.145 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:11.145 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.2395ms
+2025-10-17 00:07:11.146 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:11.146 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.9564 ms
+2025-10-17 00:07:11.147 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=bok&inStock=8 - 200 null application/json; charset=utf-8 8.1571ms
+2025-10-17 00:07:14.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=BOK&inStock=8 - null null
+2025-10-17 00:07:14.698 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:14.699 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:14.701 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 3), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:07:14.702 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:14.702 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:14.703 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.232ms
+2025-10-17 00:07:14.704 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:14.705 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.2105 ms
+2025-10-17 00:07:14.706 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=BOK&inStock=8 - 200 null application/json; charset=utf-8 8.5296ms
+2025-10-17 00:07:17.995 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - null null
+2025-10-17 00:07:17.997 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:17.998 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:18.000 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 3), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:07:18.001 +02:00 [INF] We retrieved 2 books from the database successfully
+2025-10-17 00:07:18.001 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:18.002 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.3329ms
+2025-10-17 00:07:18.003 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:18.003 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.4039 ms
+2025-10-17 00:07:18.004 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - 200 null application/json; charset=utf-8 8.7805ms
+2025-10-17 00:07:19.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - null null
+2025-10-17 00:07:19.279 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:19.280 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:19.281 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 3), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:07:19.283 +02:00 [INF] We retrieved 2 books from the database successfully
+2025-10-17 00:07:19.283 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:19.284 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.4363ms
+2025-10-17 00:07:19.285 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:19.285 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.0933 ms
+2025-10-17 00:07:19.286 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - 200 null application/json; charset=utf-8 8.6259ms
+2025-10-17 00:07:26.465 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=20&isbn=123&inStock=8 - null null
+2025-10-17 00:07:26.467 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:26.468 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:26.472 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__publicationYear_0='?' (DbType = Int32), @__ToLower_1='?' (Size = 3), @__inStock_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."PublicationYear" = @__publicationYear_0 AND instr(lower("b"."ISBN"), @__ToLower_1) > 0 AND "b"."InStock" = @__inStock_2
+2025-10-17 00:07:26.473 +02:00 [INF] We retrieved 0 books from the database successfully
+2025-10-17 00:07:26.474 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:26.475 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 6.3699ms
+2025-10-17 00:07:26.476 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:26.476 +02:00 [INF] HTTP GET /api/Books responded 200 in 9.1376 ms
+2025-10-17 00:07:26.477 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=20&isbn=123&inStock=8 - 200 null application/json; charset=utf-8 11.6498ms
+2025-10-17 00:07:28.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=2025&isbn=123&inStock=8 - null null
+2025-10-17 00:07:28.964 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:28.964 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:28.966 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__publicationYear_0='?' (DbType = Int32), @__ToLower_1='?' (Size = 3), @__inStock_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."PublicationYear" = @__publicationYear_0 AND instr(lower("b"."ISBN"), @__ToLower_1) > 0 AND "b"."InStock" = @__inStock_2
+2025-10-17 00:07:28.967 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:28.968 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:28.969 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.5681ms
+2025-10-17 00:07:28.969 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:28.970 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.4155 ms
+2025-10-17 00:07:28.971 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=2025&isbn=123&inStock=8 - 200 null application/json; charset=utf-8 8.7547ms
+2025-10-17 00:07:36.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=-1&isbn=123&inStock=8 - null null
+2025-10-17 00:07:36.168 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:36.168 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:36.170 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__publicationYear_0='?' (DbType = Int32), @__ToLower_1='?' (Size = 3), @__inStock_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE "b"."PublicationYear" = @__publicationYear_0 AND instr(lower("b"."ISBN"), @__ToLower_1) > 0 AND "b"."InStock" = @__inStock_2
+2025-10-17 00:07:36.171 +02:00 [INF] We retrieved 0 books from the database successfully
+2025-10-17 00:07:36.172 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:36.172 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.3978ms
+2025-10-17 00:07:36.173 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:36.174 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.0945 ms
+2025-10-17 00:07:36.175 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?publicationYear=-1&isbn=123&inStock=8 - 200 null application/json; charset=utf-8 8.409ms
+2025-10-17 00:07:38.384 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - null null
+2025-10-17 00:07:38.385 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:38.386 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:38.388 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 3), @__inStock_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."ISBN"), @__ToLower_0) > 0 AND "b"."InStock" = @__inStock_1
+2025-10-17 00:07:38.389 +02:00 [INF] We retrieved 2 books from the database successfully
+2025-10-17 00:07:38.389 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:38.390 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.173ms
+2025-10-17 00:07:38.391 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:38.391 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.8451 ms
+2025-10-17 00:07:38.392 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?isbn=123&inStock=8 - 200 null application/json; charset=utf-8 8.3363ms
+2025-10-17 00:07:43.462 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=forfa&isbn=123&inStock=8 - null null
+2025-10-17 00:07:43.463 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:43.464 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:43.468 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 5), @__ToLower_1='?' (Size = 3), @__inStock_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0 AND instr(lower("b"."ISBN"), @__ToLower_1) > 0 AND "b"."InStock" = @__inStock_2
+2025-10-17 00:07:43.470 +02:00 [INF] We retrieved 0 books from the database successfully
+2025-10-17 00:07:43.470 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:43.471 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 6.1638ms
+2025-10-17 00:07:43.472 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:43.472 +02:00 [INF] HTTP GET /api/Books responded 200 in 8.8602 ms
+2025-10-17 00:07:43.473 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=forfa&isbn=123&inStock=8 - 200 null application/json; charset=utf-8 11.12ms
+2025-10-17 00:07:49.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=forfa - null null
+2025-10-17 00:07:49.573 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:49.573 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:49.577 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:07:49.579 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:49.579 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:49.580 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 5.3812ms
+2025-10-17 00:07:49.580 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:49.581 +02:00 [INF] HTTP GET /api/Books responded 200 in 8.2017 ms
+2025-10-17 00:07:49.582 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=forfa - 200 null application/json; charset=utf-8 10.4937ms
+2025-10-17 00:07:55.723 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=- - null null
+2025-10-17 00:07:55.724 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:55.725 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:55.726 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 1)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:07:55.727 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:55.728 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:55.729 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.1599ms
+2025-10-17 00:07:55.729 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:55.730 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.7933 ms
+2025-10-17 00:07:55.731 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=- - 200 null application/json; charset=utf-8 8.2726ms
+2025-10-17 00:07:57.781 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=-%20%20%20%20%20%20 - null null
+2025-10-17 00:07:57.782 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:57.783 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:07:57.785 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 1)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:07:57.786 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:07:57.786 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:07:57.787 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.4083ms
+2025-10-17 00:07:57.788 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:07:57.788 +02:00 [INF] HTTP GET /api/Books responded 200 in 6.2504 ms
+2025-10-17 00:07:57.789 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=-%20%20%20%20%20%20 - 200 null application/json; charset=utf-8 8.3765ms
+2025-10-17 00:08:01.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=%20%20%20%20%20-%20%20%20%20%20%20 - null null
+2025-10-17 00:08:01.375 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:01.376 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:01.378 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 1)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:08:01.379 +02:00 [INF] We retrieved 1 books from the database successfully
+2025-10-17 00:08:01.379 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:01.380 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.1151ms
+2025-10-17 00:08:01.381 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:01.381 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.7744 ms
+2025-10-17 00:08:01.382 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=%20%20%20%20%20-%20%20%20%20%20%20 - 200 null application/json; charset=utf-8 8.0941ms
+2025-10-17 00:08:05.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=12%20%20%20 - null null
+2025-10-17 00:08:05.425 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:05.426 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:05.428 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:08:05.429 +02:00 [INF] We retrieved 0 books from the database successfully
+2025-10-17 00:08:05.429 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:05.430 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.1064ms
+2025-10-17 00:08:05.431 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:05.431 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.9845 ms
+2025-10-17 00:08:05.432 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=12%20%20%20 - 200 null application/json; charset=utf-8 8.517ms
+2025-10-17 00:08:10.468 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=G%20%20%20%20%20 - null null
+2025-10-17 00:08:10.470 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:10.470 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:10.472 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 1)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:08:10.473 +02:00 [INF] We retrieved 8 books from the database successfully
+2025-10-17 00:08:10.474 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:10.474 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.2806ms
+2025-10-17 00:08:10.475 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:10.476 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.8729 ms
+2025-10-17 00:08:10.476 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=G%20%20%20%20%20 - 200 null application/json; charset=utf-8 8.0792ms
+2025-10-17 00:08:13.590 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?author=G%20%20%20%20%20%21 - null null
+2025-10-17 00:08:13.591 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:13.591 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:13.593 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Author"), @__ToLower_0) > 0
+2025-10-17 00:08:13.594 +02:00 [INF] We retrieved 0 books from the database successfully
+2025-10-17 00:08:13.595 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:13.596 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 3.3448ms
+2025-10-17 00:08:13.596 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:13.597 +02:00 [INF] HTTP GET /api/Books responded 200 in 5.9120 ms
+2025-10-17 00:08:13.598 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?author=G%20%20%20%20%20%21 - 200 null application/json; charset=utf-8 7.9983ms
+2025-10-17 00:08:21.080 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?title=te - null null
+2025-10-17 00:08:21.081 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:21.082 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:21.087 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Title"), @__ToLower_0) > 0
+2025-10-17 00:08:21.088 +02:00 [INF] We retrieved 6 books from the database successfully
+2025-10-17 00:08:21.089 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:21.090 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 6.6848ms
+2025-10-17 00:08:21.091 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:21.092 +02:00 [INF] HTTP GET /api/Books responded 200 in 10.4690 ms
+2025-10-17 00:08:21.093 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?title=te - 200 null application/json; charset=utf-8 13.2807ms
+2025-10-17 00:08:27.886 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Books?title=te&author=knut - null null
+2025-10-17 00:08:27.887 +02:00 [INF] Executing endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:27.888 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks(System.String, System.String, System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Int32]) on controller FredrikMageeEmne7Arbkrav.Controllers.BooksController (FredrikMageeEmne7Arbkrav).
+2025-10-17 00:08:27.892 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 2), @__ToLower_1='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."Author", "b"."ISBN", "b"."InStock", "b"."PublicationYear", "b"."Title"
+FROM "Books" AS "b"
+WHERE instr(lower("b"."Title"), @__ToLower_0) > 0 AND instr(lower("b"."Author"), @__ToLower_1) > 0
+2025-10-17 00:08:27.893 +02:00 [INF] We retrieved 2 books from the database successfully
+2025-10-17 00:08:27.893 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FredrikMageeEmne7Arbkrav.DTOs.Response.BookResponse, FredrikMageeEmne7Arbkrav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 00:08:27.894 +02:00 [INF] Executed action FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav) in 5.3594ms
+2025-10-17 00:08:27.895 +02:00 [INF] Executed endpoint 'FredrikMageeEmne7Arbkrav.Controllers.BooksController.GetBooks (FredrikMageeEmne7Arbkrav)'
+2025-10-17 00:08:27.895 +02:00 [INF] HTTP GET /api/Books responded 200 in 8.0262 ms
+2025-10-17 00:08:27.896 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Books?title=te&author=knut - 200 null application/json; charset=utf-8 10.1856ms
+2025-10-17 01:20:22.248 +02:00 [INF] Application is shutting down...
