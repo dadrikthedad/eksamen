@@ -1,0 +1,36 @@
+services:
+  product-api:
+    image: gokstadfredrik/productapi:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+
+  mysql-db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: product_db
+      MYSQL_USER: product_api
+      MYSQL_PASSWORD: securepass
+      MYSQL_ROOT_PASSWORD: securepass
+    ports: 
+      - "3306:3306"
+    volumes:
+      - mysql-db-volume:/var/lib/mysql
+      - ../database_setup.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck: 
+        test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -psecurepass"]
+        interval: 15s
+        timeout: 10s
+        retries: 5
+  
+  nginx:
+    image: gokstadfredrik/productapi-nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - product-api
+
+volumes:
+  mysql-db-volume:

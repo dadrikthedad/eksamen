@@ -1,0 +1,14 @@
+services:
+  product-api:
+    image: gokstadfredrik/productapi:latest
+    environment:
+      - DatabaseConnection=Server=eksamen-db.cv4qoc0mmij3.eu-north-1.rds.amazonaws.com;Port=3306;Database=product_db;User=product_api;Password=securepass
+    ports:
+      - "8080:8080"
+
+  nginx:
+    image: gokstadfredrik/productapi-nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - product-api
